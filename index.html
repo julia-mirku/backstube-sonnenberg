@@ -94,7 +94,7 @@ nav.main a{text-decoration:none;font-weight:600;font-size:15px;padding:8px 12px;
 @media (hover:hover){.adr a:hover{color:var(--goldhell);border-color:var(--gold)}.heroB .adr a:hover{color:var(--rot)}}
 .gfbild img,.catbild img{transition:transform .6s var(--ease)}
 @media (hover:hover){.gfbild:hover img,.catbild:hover img{transform:scale(1.04)}.gfbild{cursor:zoom-in}}
-/* Theke: 3 Produkte im Hero */
+
 .theke{display:flex;flex-direction:column;gap:12px;justify-self:end;width:min(330px,100%)}
 .theke .t{font-size:13px;letter-spacing:.14em;text-transform:uppercase;font-weight:700;color:var(--goldhell);display:flex;justify-content:space-between}
 .mini{display:flex;align-items:center;gap:12px;background:rgba(255,252,245,.95);color:var(--text);border-radius:16px;padding:8px 10px 8px 8px;box-shadow:0 18px 40px -22px rgba(0,0,0,.6);animation:minIn .7s var(--ease) backwards;transition:box-shadow .2s,transform .2s}
@@ -229,7 +229,8 @@ body.paketauf .paket{transform:none;visibility:visible;box-shadow:-30px 0 60px -
 @media (hover:hover){.menge button:hover{box-shadow:inset 0 0 0 1.5px var(--gold),0 0 0 3px rgba(224,164,58,.18)}}
 .menge b{min-width:20px;text-align:center}
 .pos .sum{width:70px;text-align:right;font-family:"Zilla Slab",serif;font-weight:700}
-.paket .leerpaket{padding:40px 10px;text-align:center;color:var(--muted)}
+.paket .leerpaket{padding:18px 0 30px;text-align:center;color:var(--muted)}
+.paket .leerpaket img{width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:16px;margin-bottom:16px}
 .paket .leerpaket b{display:block;font-family:"Zilla Slab",serif;font-size:22px;color:var(--kruste);margin-bottom:6px}
 .paket .fuss{padding:16px 22px 22px;background:var(--creme);border-top:1px solid rgba(58,35,23,.08)}
 .zeile{display:flex;justify-content:space-between;font-size:15px;padding:3px 0}
@@ -310,7 +311,7 @@ body.paketauf .paket{transform:none;visibility:visible;box-shadow:-30px 0 60px -
 .jahr{scroll-snap-align:start;border-radius:22px;overflow:hidden;background:var(--creme);display:flex;flex-direction:column;transition:box-shadow .25s,transform .25s}
 .jahr .jb{aspect-ratio:4/3;overflow:hidden;cursor:zoom-in}
 .jahr .jb img{width:100%;height:100%;object-fit:cover;transition:transform .6s var(--ease)}
-.jahr .jt{padding:14px 16px 18px}
+.jahr .jt{padding:22px 20px 24px}.jahr{min-height:220px}
 .jahr .z{font-family:"Zilla Slab",serif;font-weight:700;font-size:38px;color:var(--rot);line-height:1}
 .jahr h3{font-size:18px;font-weight:700;color:var(--kruste);margin:6px 0 4px;font-family:"Golos Text",sans-serif}
 .jahr p{font-size:14.5px;color:var(--kruste2)}
@@ -515,14 +516,14 @@ footer{background:transparent;color:var(--muted);border-top:1px solid rgba(58,35
 </div>
 
 <main id="top">
-<!-- HERO A -->
+
 <section class="heroA" id="heroA">
-  <div class="bg"><img src="img/pl/080.webp" alt="Glutenfreies Rusticobrot auf rotem Sennentuch" fetchpriority="high"></div>
+  <div class="bg"><picture><source media="(max-width:767px)" srcset="img/s_hero_m.webp"><img src="img/s_hero_l.webp" alt="Brote in der Auslage der Backstube" fetchpriority="high"></picture></div>
   <div class="in">
     <div>
       <span class="kick"><i></i>Gais &amp; Bühler · seit 1991</span>
       <h1>Glutenfrei gebacken.<br> <em>Man schmeckt’s nicht.</em></h1>
-      <p class="lead">Über 90 glutenfreie Brote, Guetzli und Torten aus eigener Backstube – per Post in die ganze Schweiz. Und zwei Bäckercafés im Appenzellerland.</p>
+      <p class="lead">Über 40 glutenfreie Brote, Gipfeli und Kuchen aus eigener Backstube – per Post in die ganze Schweiz. Und zwei Bäckercafés im Appenzellerland.</p>
       <div class="cta">
         <a class="btn rot" href="#shop"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><path d="M3 7.5 12 3l9 4.5v9L12 21l-9-4.5z"/><path d="M3 7.5 12 12l9-4.5M12 12v9"/></svg>Glutenfrei bestellen</a>
         <a class="btn glas" href="#cafes">Cafés &amp; Läden</a>
@@ -534,13 +535,13 @@ footer{background:transparent;color:var(--muted);border-top:1px solid rgba(58,35
   </div>
 </section>
 
-<!-- HERO B -->
+
 <section class="heroB" id="heroB">
   <div class="in">
     <div>
       <span class="kick"><i></i>Bäckerei · Konditorei · seit 1991</span>
       <h1>Brot für alle.<br><span>Auch ohne Gluten.</span></h1>
-      <p class="lead">Aus dem Appenzellerland: über 90 glutenfreie Spezialitäten per Post – vom Zopf bis zum Biber. Dazu zwei Bäckercafés und Catering.</p>
+      <p class="lead">Aus dem Appenzellerland: glutenfreie Spezialitäten per Post – vom Buchweizenbrot bis zur Rüeblitorte. Dazu zwei Bäckercafés und Catering.</p>
       <div class="cta">
         <a class="btn rot" href="#shop">Glutenfrei bestellen</a>
         <a class="btn hell" href="#cafes">Cafés &amp; Läden</a>
@@ -557,7 +558,7 @@ footer{background:transparent;color:var(--muted);border-top:1px solid rgba(58,35
   </div>
 </section>
 
-<!-- Backtage + Zeiten -->
+
 <section class="tage" id="zeiten">
   <div class="wrap">
     <h2>Offen &amp; Backtage<small>Tag antippen – Zeiten beider Läden</small></h2>
@@ -567,12 +568,12 @@ footer{background:transparent;color:var(--muted);border-top:1px solid rgba(58,35
   </div>
 </section>
 
-<!-- SHOP -->
+
 <section class="sec shop" id="shop">
   <div class="wrap">
     <div class="sh fade">
       <h2>Der glutenfreie Laden.<br><em>Per Post in die ganze Schweiz.</em></h2>
-      <div class="shr"><p>Gebacken in einem separaten Raum. Bild antippen = gross ansehen, <b>+</b> legt es ins Paket.</p><label class="such"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m20 20-4-4"/></svg><input id="such" type="search" placeholder="Suchen: Zopf, Biber …" aria-label="Produkte suchen"></label></div>
+      <div class="shr"><p>Gebacken in einem separaten Raum. Bild antippen = gross ansehen, <b>+</b> legt es ins Paket.</p><label class="such"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m20 20-4-4"/></svg><input id="such" type="search" placeholder="Suchen: Brot, Cookies …" aria-label="Produkte suchen"></label></div>
     </div>
     <div class="shopbar fade">
       <div class="kats" id="kats"></div>
@@ -584,26 +585,26 @@ footer{background:transparent;color:var(--muted);border-top:1px solid rgba(58,35
     </div>
     <div class="punkte" data-p="regal"></div>
     <div class="versand fade">
-      <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 7.5 12 3l9 4.5v9L12 21l-9-4.5z"/></svg>Versand bis 8 kg CHF 15, ab 8 kg CHF 25</span>
-      <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>A-Post Priority – meist am nächsten Tag da</span>
-      <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12l5 5L20 7"/></svg>Für Montag bestellen bis Freitag 16:00</span>
+      <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 7.5 12 3l9 4.5v9L12 21l-9-4.5z"/></svg>Versand CHF 9.90 – ab CHF 80 portofrei</span>
+      <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>Versand Dienstag bis Freitag</span>
+      <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12l5 5L20 7"/></svg>Bis 12 Uhr bestellt – am nächsten Backtag gebacken</span>
     </div>
   </div>
 </section>
 
-<!-- GLUTENFREI SEIT 1987 -->
+
 <section class="sec gfsec" id="glutenfrei">
   <div class="wrap gfgrid">
-    <div class="gfbild fade" data-zoom="img/mehl_aehre.webp"><img src="img/mehl_aehre.webp" alt="Mehl mit dem Zeichen der durchgestrichenen Ähre" loading="lazy">
-      <div class="st"><b>Unser erstes glutenfreies Brot</b> buken wir 1991 für ein Kind aus dem Dorf. Heute sind es über 90 Produkte.</div></div>
+    <div class="gfbild fade" data-zoom="img/s_backstube_l.webp"><img src="img/s_backstube.webp" alt="Glutenfreier Teig und verschiedene Mehlsorten" loading="lazy">
+      <div class="st"><b>Unser erstes glutenfreies Brot</b> buken wir 1991 für ein Kind aus dem Dorf. Heute sind es über 40.</div></div>
     <div class="gftext fade">
       <h2>Glutenfrei ist bei uns <em>kein Trend.</em></h2>
       <p>1991 eröffnete die Familie Sonnenberg ihre Backstube am Dorfplatz in Gais – und backte schon im ersten Jahr glutenfrei. Heute führt die zweite Generation den Betrieb.</p>
       <p>Glutenfreies backen wir in einem eigenen, abgetrennten Raum – getrennt von der täglichen Produktion.</p>
       <div class="fakten">
         <div class="fakt"><b>seit 1991</b><span>glutenfreie Backstube im Familienbetrieb</span></div>
-        <div class="fakt"><b>90+</b><span>glutenfreie Produkte im Onlineshop</span></div>
-        <div class="fakt"><b>Mo · Di · Do</b><span>glutenfreie Backtage</span></div>
+        <div class="fakt"><b>40+</b><span>glutenfreie Produkte im Laden</span></div>
+        <div class="fakt"><b>Di · Mi · Fr</b><span>Backtage für den Versand</span></div>
         <div class="fakt"><b>1 Raum</b><span>nur für Glutenfreies – getrennt von der übrigen Backstube</span></div>
       </div>
       
@@ -611,28 +612,28 @@ footer{background:transparent;color:var(--muted);border-top:1px solid rgba(58,35
   </div>
 </section>
 
-<!-- CAFÉS -->
+
 <section class="sec cafes" id="cafes">
   <div class="wrap">
     <div class="sh fade"><h2>Zwei Bäckercafés.<br><em>Znüni, Zmittag, Zmorge.</em></h2><p>Saisonale und regionale Znüni, kleine Mittagssnacks und ein feines Morgenessen – direkt aus der eigenen Backstube.</p></div>
     <div class="cgrid">
       <article class="cafe fade">
-        <div class="cb" data-zoom="img/pl/057.webp"><img src="img/pl/057.webp" alt="Japonaistorte" loading="lazy"></div>
+        <div class="cb" data-zoom="img/s_cafe_l.webp"><img src="img/s_cafe.webp" alt="Café am Dorfplatz" loading="lazy"></div>
         <div class="ci">
           <span class="ort2">Gais · Dorfplatz 7</span>
           <h3>Café am Dorfplatz</h3>
-          <div class="pl"><span>16 Plätze</span><span>2 Stehtische</span><span>seit 2019</span></div>
+          <div class="pl"><span>22 Plätze</span><span>Terrasse</span><span>seit 2019</span></div>
           <p data-cafe="w"></p>
-          <div class="zit">Das Zmorge mit Zopf und Konfitüre ist jeden Samstag unser Ritual.<small>Simone K. (fiktiv)</small></div>
+          <div class="zit">Das Zmorge mit frischen Gipfeli ist jeden Samstag unser Ritual.<small>Simone K. (fiktiv)</small></div>
           <div class="acts"><a class="btn rot" href="tel:+41710001234">Anrufen</a><a class="btn hell" href="https://maps.google.com/?q=Gais+AR" target="_blank" rel="noopener">Route</a></div>
         </div>
       </article>
       <article class="cafe fade">
-        <div class="cb" data-zoom="img/pl/074.webp"><img src="img/pl/074.webp" alt="Gipfeli" loading="lazy"></div>
+        <div class="cb" data-zoom="img/s_kafistube_l.webp"><img src="img/s_kafistube.webp" alt="Kafi-Stube Bühler" loading="lazy"></div>
         <div class="ci">
           <span class="ort2">Bühler · Bahnhofstrasse 4</span>
           <h3>Kafi-Stube Bühler</h3>
-          <div class="pl"><span>14 Plätze</span><span>seit Dez. 2023</span><span>Sa bis 15:00</span></div>
+          <div class="pl"><span>14 Plätze</span><span>seit 2024</span><span>Mo Ruhetag</span></div>
           <p data-cafe="u"></p>
           <div class="zit">Kleine Stube, grosser Kaffee – und immer ein freundliches Wort.<small>Reto B. (fiktiv)</small></div>
           <div class="acts"><a class="btn rot" href="tel:+41710005678">Anrufen</a><a class="btn hell" href="https://maps.google.com/?q=B%C3%BChler+AR" target="_blank" rel="noopener">Route</a></div>
@@ -642,11 +643,11 @@ footer{background:transparent;color:var(--muted);border-top:1px solid rgba(58,35
   </div>
 </section>
 
-<!-- CATERING -->
+
 <section class="sec cat" id="catering">
   <div class="wrap">
     <div class="catgrid">
-      <div class="catbild fade" data-zoom="img/pl/091.webp"><img src="img/pl/091.webp" alt="Pizzabaguette" loading="lazy"><span class="lab">Apéro &amp; Pizzabaguette</span></div>
+      <div class="catbild fade" data-zoom="img/s_catering_l.webp"><picture><source media="(max-width:767px)" srcset="img/s_catering_m.webp"><img src="img/s_catering.webp" alt="Apéro-Buffet" loading="lazy"></picture><span class="lab">Apéro &amp; Buffet</span></div>
       <div class="planer fade">
         <h2 class="cath">Sonnenberg Catering. <em>Auch glutenfrei.</em></h2>
         <p class="catp">Gefüllte Meterbrote, Brote als Herz, Schlüssel oder Zahl, Spiessli, Chüechli und Patisserie – für Firma, Familie und Fest. Wählen Sie, wir melden uns mit einem Angebot.</p>
@@ -665,17 +666,17 @@ footer{background:transparent;color:var(--muted);border-top:1px solid rgba(58,35
   </div>
 </section>
 
-<!-- SEIT 1987 -->
+
 <section class="sec chronik" id="seit1991">
   <div class="wrap">
     <div class="sh fade"><h2>Ein Familienbetrieb.<br><em>Seit 1991.</em></h2><p>Zwei Generationen, zwei Dörfer, eine Backstube für alle.</p></div>
     <div class="regalwrap fade">
       <button class="pfeil l" data-l="jahre" aria-label="Zurück"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 5l-7 7 7 7"/></svg></button>
       <div class="jahre" id="jahre">
-        <article class="jahr"><div class="jb" data-zoom="img/pl/079.webp"><img src="img/pl/079.webp" alt="Ruchbrot" loading="lazy"></div><div class="jt"><span class="z">1991</span><h3>Die Backstube am Dorfplatz</h3><p>Eröffnung in Gais – und das erste glutenfreie Brot im selben Jahr.</p></div></article>
-        <article class="jahr"><div class="jb" data-zoom="img/pl/068.webp"><img src="img/pl/068.webp" alt="Baumnussbrot" loading="lazy"></div><div class="jt"><span class="z">2006</span><h3>Bühler kommt dazu</h3><p>Die zweite Filiale – mit mehr Konditorei und Biber nach Hausrezept.</p></div></article>
-        <article class="jahr"><div class="jb" data-zoom="img/pl/085.webp"><img src="img/pl/085.webp" alt="Zopf" loading="lazy"></div><div class="jt"><span class="z">2015</span><h3>Der Onlineshop</h3><p>Glutenfreies per Post in die ganze Schweiz – meist am nächsten Tag.</p></div></article>
-        <article class="jahr"><div class="jb" data-zoom="img/pl/038.webp"><img src="img/pl/038.webp" alt="Schokoladenkugel" loading="lazy"></div><div class="jt"><span class="z">2019 · 2024</span><h3>Zwei Cafés</h3><p>2019 das Café am Dorfplatz in Gais, 2024 die Kafi-Stube in Bühler.</p></div></article>
+        <article class="jahr"><div class="jt"><span class="z">1991</span><h3>Die Backstube am Dorfplatz</h3><p>Eröffnung in Gais – und das erste glutenfreie Brot im selben Jahr.</p></div></article>
+        <article class="jahr"><div class="jt"><span class="z">2006</span><h3>Bühler kommt dazu</h3><p>Die zweite Filiale – mit kleiner Konditorei und Kafi-Stube.</p></div></article>
+        <article class="jahr"><div class="jt"><span class="z">2015</span><h3>Der Onlineshop</h3><p>Glutenfreies per Post in die ganze Schweiz – meist am nächsten Tag.</p></div></article>
+        <article class="jahr"><div class="jt"><span class="z">2019 · 2024</span><h3>Zwei Cafés</h3><p>2019 das Café am Dorfplatz in Gais, 2024 die Kafi-Stube in Bühler.</p></div></article>
       </div>
       <button class="pfeil r" data-r="jahre" aria-label="Weiter"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 5l7 7-7 7"/></svg></button>
     </div>
@@ -683,14 +684,14 @@ footer{background:transparent;color:var(--muted);border-top:1px solid rgba(58,35
   </div>
 </section>
 
-<!-- STIMMEN -->
+
 <section class="sec stimmen" id="stimmen">
   <div class="wrap">
     <div class="sh fade"><h2>«Hier stimmt <em>einfach alles.</em>»</h2><div class="sterne"><b>5,0</b><span><span style="color:var(--gold);letter-spacing:2px">★★★★★</span><br>Bewertungen (fiktiv)</span></div></div>
     <div class="regalwrap fade">
       <button class="pfeil l" data-l="zitate" aria-label="Zurück"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 5l-7 7 7 7"/></svg></button>
       <div class="zitate" id="zitate">
-        <div class="zitat"><span class="s">★★★★★</span><q>Endlich Brot, das nicht nach Kompromiss schmeckt. Mein Sohn isst den Zopf am liebsten warm.</q><span class="w"><b>Andrea M.</b> · fiktiv</span></div>
+        <div class="zitat"><span class="s">★★★★★</span><q>Endlich Brot, das nicht nach Kompromiss schmeckt. Das Buchweizenbrot ist bei uns jede Woche dabei.</q><span class="w"><b>Andrea M.</b> · fiktiv</span></div>
         <div class="zitat"><span class="s">★★★★★</span><q>Seit drei Jahren bestellen wir jede Woche – das Paket kommt zuverlässig am nächsten Tag.</q><span class="w"><b>Thomas W.</b> · fiktiv</span></div>
         <div class="zitat"><span class="s">★★★★★</span><q>Echte Backkunst, freundliches Team und immer frische Ware.</q><span class="w"><b>Claudia R.</b> · fiktiv</span></div>
         <div class="zitat"><span class="s">★★★★★</span><q>Die glutenfreien Guetzli sind an Weihnachten bei uns jedes Jahr zuerst weg.</q><span class="w"><b>Marco S.</b> · fiktiv</span></div>
@@ -704,7 +705,7 @@ footer{background:transparent;color:var(--muted);border-top:1px solid rgba(58,35
   </div>
 </section>
 
-<!-- KONTAKT -->
+
 <section class="kontakt" id="kontakt">
   <div class="wrap kgrid">
     <div class="kk fade"><span class="o">Hauptgeschäft</span><h3>Gais</h3><span>Dorfplatz 7 · 9056 Gais AR</span><a class="tel" href="tel:+41710001234">071 000 12 34</a><ul data-std="w"></ul><div class="acts"><a class="btn rot" href="tel:+41710001234">Anrufen</a><a class="btn glas" href="https://maps.google.com/?q=Gais+AR" target="_blank" rel="noopener">Route</a></div></div>
@@ -715,7 +716,7 @@ footer{background:transparent;color:var(--muted);border-top:1px solid rgba(58,35
 </main>
 <footer><div class="wrap"><svg viewBox="0 0 40 40" width="24" height="24" aria-hidden="true"><circle cx="20" cy="20" r="18" fill="#E0A43A"/><path d="M6 27c5-6 9-9 14-9s9 3 14 9" fill="none" stroke="#3A2317" stroke-width="2.4" stroke-linecap="round"/><path d="M11 31h18" stroke="#3A2317" stroke-width="2.4" stroke-linecap="round"/></svg><span>Backstube Sonnenberg · Gais AR</span><span>Musterentwurf von Julia &amp; Robin Mirku – Namen und Angaben fiktiv, Fotos als Symbolbilder.</span></div></footer>
 
-<!-- Paket -->
+
 <div class="schleier" data-zu></div>
 <aside class="paket" aria-label="Ihr Paket">
   <div class="kopf">
@@ -726,7 +727,7 @@ footer{background:transparent;color:var(--muted);border-top:1px solid rgba(58,35
   <div class="liste" id="liste"></div>
   <div class="fuss">
     <div class="zeile"><span>Zwischensumme</span><span data-zw>CHF 0.00</span></div>
-    <div class="zeile"><span>Versand (bis 8 kg)</span><span data-vs>CHF 15.00</span></div>
+    <div class="zeile"><span>Versand</span><span data-vs>CHF 9.90</span></div>
     <div class="zeile tot"><span>Total</span><span data-tot>CHF 0.00</span></div>
     <div class="backinfo"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg><span data-bi></span></div>
     <button class="btn rot" id="kasse">Zur Kasse</button>
@@ -739,8 +740,8 @@ footer{background:transparent;color:var(--muted);border-top:1px solid rgba(58,35
 
 <script>
 document.documentElement.classList.add('js');document.body.classList.add('js');
-const P=[[0,"4Fondue-Caquelon mit Protektor",99.0,"fondue"],[1,"Fonduebrot",5.4,"fondue"],[2,"Birnweggli",3.5,"guetzli"],[3,"Brezel Schoggi",2.5,"guetzli"],[4,"Brezel Vanille",2.5,"guetzli"],[5,"Donut",3.7,"guetzli"],[6,"Haselnussmakrönli",2.8,"guetzli"],[7,"Hefenussgipfel",3.5,"guetzli"],[8,"Kokos Schoggiringli",2.8,"guetzli"],[9,"Kokosmakrönli",2.8,"guetzli"],[10,"Linzertörtli",3.5,"guetzli"],[11,"Löffelbiscuit",8.5,"guetzli"],[12,"Mandelbögli",2.8,"guetzli"],[13,"Mandelgipfel",3.5,"guetzli"],[14,"Nussstängeli",4.8,"guetzli"],[15,"Pfaffenhüetli",2.8,"guetzli"],[16,"Russenzöpfli",3.5,"guetzli"],[17,"Schnecken",3.5,"guetzli"],[18,"Schoggidonut",4.3,"guetzli"],[19,"Sebastopol",2.8,"guetzli"],[20,"Spitzbuben",2.8,"guetzli"],[21,"Spitzbuben Aprikosen",2.5,"guetzli"],[22,"Totenbeinli",2.8,"guetzli"],[23,"Vogelnestli",2.8,"guetzli"],[24,"Appenzeller Biber",7.9,"patisserie"],[25,"Appenzeller Biberkonfekt",5.5,"patisserie"],[26,"Brownies",3.5,"patisserie"],[27,"Bündner Nusstorte",11.0,"patisserie"],[28,"Crémeschnitte",9.0,"patisserie"],[29,"Florentiner",12.9,"patisserie"],[30,"Früchtecake",7.9,"patisserie"],[31,"Japonais",3.5,"patisserie"],[32,"Konfekt 250g",16.0,"patisserie"],[33,"Konfekt 500g",30.8,"patisserie"],[34,"Lebkuchen",4.3,"patisserie"],[35,"Linzerschnitte",3.5,"patisserie"],[36,"Nusstörtli",3.9,"patisserie"],[37,"Schlorzifladen",3.5,"patisserie"],[38,"Schokoladenkugel",3.5,"patisserie"],[39,"Bühlerergrüsse 2 Stk.",10.9,"patisserie"],[40,"Bühlerergrüsse 4 Stk.",19.3,"patisserie"],[41,"Bühlerergrüsse 6 Stk.",26.4,"patisserie"],[42,"Bühlerergrüsse 8 Stk.",31.7,"patisserie"],[43,"Zimtschnitte",3.5,"patisserie"],[44,"Züngli",3.5,"patisserie"],[45,"Christstollen",12.0,"saison"],[46,"Fasnachtschüechli",12.9,"saison"],[47,"Grittibänz gross",5.5,"saison"],[48,"Grittibänz klein",3.9,"saison"],[49,"Königskuchen 12er",16.5,"saison"],[50,"Königskuchen 6er",8.9,"saison"],[51,"Königskuchen 8er",12.9,"saison"],[52,"Magenbrot",4.9,"saison"],[53,"Reisküchlein",4.0,"saison"],[54,"Schenkeli",2.2,"saison"],[55,"Weihnachtskonfekt",5.9,"saison"],[56,"Zopfhasen",5.5,"saison"],[57,"Japonaistorte",37.5,"torten"],[58,"Schwarzwäldertorte",37.5,"torten"],[59,"Zitronenroulade",13.0,"torten"],[60,"Blätterteig 250gr",4.0,"teig"],[61,"Blätterteig 500gr",7.5,"teig"],[62,"Blätterteig mit Boden",3.4,"teig"],[63,"Früchtebödeli",1.8,"teig"],[64,"Kuchenteig 250gr",4.0,"teig"],[65,"Kuchenteig 500gr",7.5,"teig"],[66,"Kuchenteig mit Boden",3.4,"teig"],[67,"Baguette weiss 240 gr",5.5,"brot"],[68,"Baumnussbrot",6.5,"brot"],[69,"Ciabatta brötli dunkel",1.9,"brot"],[70,"Ciabatta brötli hell",1.9,"brot"],[71,"Flutes",9.9,"brot"],[72,"Frischbackbrötli",19.2,"brot"],[73,"Früchtebrot",8.3,"brot"],[74,"Gipfeli",2.5,"brot"],[75,"Kürbisbrot",6.5,"brot"],[76,"Laugenbrötli",1.9,"brot"],[77,"Maisbrot",7.8,"brot"],[78,"Olivenbrötli",2.1,"brot"],[79,"Ruchbrot",6.5,"brot"],[80,"Rusticobrot",6.5,"brot"],[81,"Rusticobrötli",1.9,"brot"],[82,"Schraubenbrot 420 gr",7.0,"brot"],[83,"Weggli",1.9,"brot"],[84,"Weissbrot",6.5,"brot"],[85,"Zopf",7.8,"brot"],[86,"Zopf klein",3.9,"brot"],[87,"Paniermehl",4.9,"teig"],[88,"Spezialmehl",8.5,"teig"],[89,"Chäschüechli",3.5,"salz"],[90,"Pastetli",2.0,"salz"],[91,"Pizzabaguette mit Speck",7.2,"salz"],[92,"Pizzabaguette Tomaten Mozzarella",6.9,"salz"],[93,"Pizzaboden vorgebacken",4.0,"salz"],[94,"Biber Bär",18.5,"biber"],[95,"Biber Buttermacher",24.5,"biber"],[96,"Biber Hochalp",28.9,"biber"],[97,"Biber rund gross",15.8,"biber"],[98,"Biber Säntis",36.9,"biber"],[99,"Biber Sennbild",32.9,"biber"],[100,"Biberfladen gefüllt",12.9,"biber"],[101,"Biberfladen ungefüllt",9.5,"biber"],[102,"Biberli rund mit Motiv",3.5,"biber"],[103,"Birnbrot 200 gr",8.9,"biber"],[104,"Birnbrot 400 gr",12.9,"biber"],[105,"Mandelfisch gross",14.9,"biber"],[106,"Mandelfisch klein",3.9,"biber"],[107,"Silvesterklausbiber",7.7,"biber"]];
-const KAT=[['brot','Brot & Brötli'],['patisserie','Pâtisserie'],['guetzli','Guetzli'],['torten','Torten'],['salz','Salzgebäck'],['saison','Saison'],['teig','Teig & Mehl'],['fondue','Fondue'],['biber','Appenzeller Biber']];
+const P=[[1,"Buchweizenbrot",7.4,"brot"],[2,"Kastanienbrot",8.2,"brot"],[3,"Hirse-Sonnenblumenbrot",7.6,"brot"],[4,"Quinoa-Toast",6.9,"brot"],[5,"Leinsamenbrötli 4 Stk.",6.4,"brot"],[6,"Mais-Focaccia mit Rosmarin",5.8,"salzig"],[7,"Buttergipfeli 4 Stk.",7.2,"suess"],[8,"Nussschnecke",4.2,"suess"],[9,"Mandelhörnchen",3.8,"suess"],[10,"Haselnuss-Cookies 6 Stk.",6.6,"guetzli"],[11,"Mailänderli 200 g",8.4,"guetzli"],[12,"Brunsli 200 g",8.9,"guetzli"],[13,"Zitronen-Tartelette",4.6,"kuchen"],[14,"Rüeblitorte klein",24.0,"kuchen"],[15,"Schoggikuchen",16.8,"kuchen"],[16,"Apfelstrudel",13.5,"kuchen"],[17,"Käsewähe",9.8,"salzig"],[18,"Spinat-Quiche",10.4,"salzig"],[19,"Pizzaboden 2 Stk.",6.2,"zutaten"],[20,"Brotbackmischung 1 kg",11.9,"zutaten"]];
+const KAT=[['brot','Brot'],['suess','Gipfeli & Gebäck'],['guetzli','Guetzli'],['kuchen','Kuchen & Torten'],['salzig','Salziges'],['zutaten','Backzutaten']];
 const $=s=>document.querySelector(s),$$=s=>[...document.querySelectorAll(s)];
 const chf=n=>'CHF '+n.toFixed(2);
 const ear='<svg viewBox="0 0 24 24" fill="none" stroke="#2F6B4F" stroke-width="1.8"><circle cx="12" cy="12" r="10"/><path d="M12 19V8M12 10c-2-1-3-3-3-5 2 1 3 2 3 5zm0 0c2-1 3-3 3-5-2 1-3 2-3 5zm0 4c-2-1-3-3-3-5 2 1 3 2 3 5zm0 0c2-1 3-3 3-5-2 1-3 2-3 5z"/><path d="M5 5l14 14"/></svg>';
@@ -749,9 +750,9 @@ const urlv=new URLSearchParams(location.search);
 if(urlv.get('hero')==='b')document.body.classList.add('hb');
 
 /* Öffnungszeiten */
-const STD={w:{1:[[360,1110]],2:[[360,1110]],3:[[360,780]],4:[[360,1110]],5:[[360,1110]],6:[[360,780]],0:[]},
-           u:{1:[[375,735],[840,1110]],2:[[375,735],[840,1110]],3:[[375,735]],4:[[375,735],[840,1110]],5:[[375,735],[840,1110]],6:[[375,780]],0:'so'}};
-const BACK=[1,2,4];const TN=['So','Mo','Di','Mi','Do','Fr','Sa'],TL=['Sonntag','Montag','Dienstag','Mittwoch','Donnerstag','Freitag','Samstag'];
+const STD={w:{1:[[390,1080]],2:[[390,1080]],3:[[390,1080]],4:[[390,1080]],5:[[390,1080]],6:[[390,840]],0:[[480,690]]},
+           u:{1:[],2:[[420,720],[870,1080]],3:[[420,720],[870,1080]],4:[[420,720],[870,1080]],5:[[420,720],[870,1080]],6:[[420,780]],0:[]}};
+const BACK=[2,3,5];const TN=['So','Mo','Di','Mi','Do','Fr','Sa'],TL=['Sonntag','Montag','Dienstag','Mittwoch','Donnerstag','Freitag','Samstag'];
 const hm=m=>Math.floor(m/60)+':'+String(m%60).padStart(2,'0');
 function slots(o,d,date){let s=STD[o][d];if(s==='so'){const mo=(date||new Date()).getMonth();return(mo>=10||mo<=3)?[[420,660]]:[]}return s}
 const fmt=s=>s.length?s.map(x=>hm(x[0])+'–'+hm(x[1])).join(' · '):'geschlossen';
@@ -763,13 +764,13 @@ $$('[data-heute]').forEach(el=>{const w=status('w'),u=status('u');
   el.innerHTML=`<a class="pill" href="tel:+41710001234"><span class="dot ${w.open?'':'zu'}"></span><b>Gais</b> ${w.t}</a><a class="pill" href="tel:+41710005678"><span class="dot ${u.open?'':'zu'}"></span><b>Bühler</b> ${u.t}</a>`});
 const woche=$('#woche');[1,2,3,4,5,6,0].forEach(d=>{const b=document.createElement('button');b.className='tag'+(BACK.includes(d)?' bt':'')+(d===today?' sel':'');b.dataset.d=d;b.innerHTML=`<b>${TN[d]}</b><span>${d===today?'heute':BACK.includes(d)?'Backtag':'&nbsp;'}</span>`;b.onclick=()=>zeigTag(d);woche.appendChild(b)});
 function zeigTag(d){$$('.tag').forEach(t=>t.classList.toggle('sel',+t.dataset.d===d));
-  const extra=d===6?'<div class="x">Café bis 15:00</div>':d===0?'<div class="x">nur November–April</div>':'';
+  const extra='';
   $('#zeiten2').innerHTML=`<div class="ort"><div class="o">Gais</div><div class="h">${fmt(slots('w',d))}</div></div><div class="ort"><div class="o">Bühler</div><div class="h">${fmt(slots('u',d))}</div>${extra}</div>`;
-  const nb=nextBack();$('#bthint').innerHTML=`<span><i></i>${BACK.includes(d)?'<b>'+TL[d]+' ist glutenfreier Backtag.</b>':TL[d]+': kein glutenfreier Backtag.'}</span><span>Nächster Backtag: <b>${nb.txt}</b></span><span>Für Montag bestellen bis Freitag 16:00</span>`}
+  const nb=nextBack();$('#bthint').innerHTML=`<span><i></i>${BACK.includes(d)?'<b>'+TL[d]+' ist glutenfreier Backtag.</b>':TL[d]+': kein glutenfreier Backtag.'}</span><span>Nächster Backtag: <b>${nb.txt}</b></span><span>Bis 12 Uhr bestellt – am nächsten Backtag gebacken</span>`}
 zeigTag(today);
-$$('[data-std]').forEach(ul=>{const o=ul.dataset.std;ul.innerHTML=[[1,'Mo, Di, Do, Fr'],[3,'Mittwoch'],[6,'Samstag'],[0,'Sonntag']].map(([d,l])=>`<li><span>${l}</span><span>${d===0&&o==='u'?'Nov–Apr 7:00–11:00':fmt(slots(o,d,new Date(2026,5,1)))}</span></li>`).join('')});
-$('[data-cafe="w"]').textContent='Mo, Di, Do, Fr 6:00–18:30 · Mi und Sa 6:00–13:00 · So geschlossen.';
-$('[data-cafe="u"]').textContent='Mo, Di, Do, Fr 6:15–12:15 und 14:00–18:30 · Mi 6:15–12:15 · Sa 6:15–15:00 · So (Nov–Apr) 7:00–11:00.';
+$$('[data-std]').forEach(ul=>{const o=ul.dataset.std;ul.innerHTML=[[2,'Di–Fr'],[1,'Montag'],[6,'Samstag'],[0,'Sonntag']].map(([d,l])=>`<li><span>${l}</span><span>${fmt(slots(o,d,new Date(2026,5,1)))}</span></li>`).join('')});
+$('[data-cafe="w"]').textContent='Mo–Fr 6:30–18:00 · Sa 6:30–14:00 · So 8:00–11:30.';
+$('[data-cafe="u"]').textContent='Di–Fr 7:00–12:00 und 14:30–18:00 · Sa 7:00–13:00 · So und Mo geschlossen.';
 
 /* Paket */
 let korb={};try{korb=JSON.parse(localStorage.getItem('sonnPaket')||'{}')}catch(e){}
@@ -779,8 +780,8 @@ function render(){const ids=Object.keys(korb).filter(k=>korb[k]>0);let n=0,zw=0;
   $('#liste').innerHTML=ids.length?ids.map(k=>{const p=byId(+k),q=korb[k];n+=q;zw+=q*p[2];return `<div class="pos"><img src="img/p/${String(p[0]).padStart(3,'0')}.webp" alt=""><div><div class="nm">${p[1]}</div><div class="ep">${chf(p[2])}</div></div><div class="menge"><button data-m="${k}" aria-label="weniger">−</button><b>${q}</b><button data-pl="${k}" aria-label="mehr">+</button></div><div class="sum">${q*p[2]>0?(q*p[2]).toFixed(2):''}</div></div>`}).join(''):'<div class="leerpaket"><b>Noch nichts im Paket</b>Tippen Sie bei einem Produkt auf +</div>';
   $$('[data-cnt]').forEach(c=>c.textContent=n);
   $('[data-anz]').textContent=n?n+(n===1?' Artikel':' Artikel')+' · glutenfrei gebacken':'noch leer';
-  const vs=n?15:0;$('[data-zw]').textContent=chf(zw);$('[data-vs]').textContent=n?chf(vs):'–';$('[data-tot]').textContent=chf(zw+vs);
-  const nb=nextBack();$('[data-bi]').innerHTML=`Glutenfrei gebacken an den Backtagen <b>Mo, Di und Do</b>, Versand mit A-Post Priority – meist am nächsten Tag bei Ihnen. Für Montag bis Freitag 16:00 bestellen. Ab 8 kg Versand CHF 25.`;
+  const vs=n?(zw>=80?0:9.9):0;$('[data-zw]').textContent=chf(zw);$('[data-vs]').textContent=n?chf(vs):'–';$('[data-tot]').textContent=chf(zw+vs);
+  const nb=nextBack();$('[data-bi]').innerHTML=`Frisch gebacken an den Backtagen <b>Di, Mi und Fr</b> und am selben Tag verschickt. Bis 12 Uhr bestellt – am nächsten Backtag gebacken. Ab CHF 80 portofrei.`;
   $('.paketfab').classList.toggle('zeig',n>0||scrollY>innerHeight*.8)}
 function add(id,fromImg){korb[id]=(korb[id]||0)+1;save();render();
   const tgt=innerWidth<768?$('.paketfab'):$('header .paketbtn');
@@ -797,12 +798,12 @@ $('#kasse').onclick=()=>{$('#demo').textContent='Im Entwurf ist die Kasse noch n
 render();
 
 /* Theke Hero A */
-const THEKE=[85,74,24];
+const THEKE=[1,7,14];
 $('[data-theke]').insertAdjacentHTML('beforeend',THEKE.map(id=>{const p=byId(id);const f=String(id).padStart(3,'0');return `<div class="mini"><img src="img/p/${f}.webp" alt="${p[1]}" data-zoom="img/pl/${f}.webp" data-cap="${p[1]} · ${chf(p[2])}"><div><div class="nm">${p[1]}</div><div class="gf">glutenfrei</div></div><span class="pr">${p[2].toFixed(2)}</span><button class="plus" data-add="${id}" aria-label="${p[1]} ins Paket">${plusSvg}</button></div>`}).join(''));
 setTimeout(()=>document.body.classList.add('ready'),1300);
 
 /* Hero B Teller */
-const TEL=[85,24,58,74,38,37];let ti=0;
+const TEL=[1,7,14,13,15,10];let ti=0;
 $('#disk').innerHTML=TEL.map((id,i)=>`<img src="img/pl/${String(id).padStart(3,'0')}.webp" alt="${byId(id)[1]}" class="${i?'':'on'}" ${i>1?'loading="lazy"':''}>`).join('');
 function tel(i){ti=(i+TEL.length)%TEL.length;$$('#disk img').forEach((im,k)=>im.classList.toggle('on',k===ti));const p=byId(TEL[ti]);$('#ttag').innerHTML=`<div><div class="nm">${p[1]}</div><div class="pr">${chf(p[2])}</div></div><button class="plus" data-add="${p[0]}" aria-label="ins Paket" style="margin-left:auto">${plusSvg}</button>`}
 tel(0);$('#tl').onclick=()=>tel(ti-1);$('#tr').onclick=()=>tel(ti+1);
@@ -815,7 +816,7 @@ $('#kats').innerHTML=KAT.map(([k,l])=>`<button class="kat${k===kat?' sel':''}" d
 $('#kats').onclick=e=>{const b=e.target.closest('.kat');if(!b)return;kat=b.dataset.k;q='';$('#such').value='';$$('.kat').forEach(x=>x.classList.toggle('sel',x===b));shop()};
 $('#such').oninput=e=>{q=e.target.value.trim().toLowerCase();$$('.kat').forEach(x=>x.classList.toggle('sel',!q&&x.dataset.k===kat));shop()};
 function shop(){const list=q?P.filter(p=>p[1].toLowerCase().includes(q)):P.filter(p=>p[3]===kat);const r=$('#regal');
-  r.innerHTML=list.length?list.map(p=>{const f=String(p[0]).padStart(3,'0'),gf=p[3]!=='biber'&&p[0]!==0;return `<article class="karte"><div class="bild" data-zoom="img/pl/${f}.webp" data-cap="${p[1]} · ${chf(p[2])}"><img src="img/p/${f}.webp" alt="${p[1]}" loading="lazy">${gf?`<span class="badge">${ear}glutenfrei</span>`:p[3]==='biber'?'<span class="badge nogf">mit Gluten</span>':''}</div><div class="unt"><div><div class="nm">${p[1]}</div><span class="pr">${chf(p[2])}</span></div><button class="plus" data-add="${p[0]}" aria-label="${p[1]} ins Paket">${plusSvg}</button></div></article>`}).join(''):'<div class="leer">Nichts gefunden – versuchen Sie «Brot», «Biber» oder «Torte».</div>';
+  r.innerHTML=list.length?list.map(p=>{const f=String(p[0]).padStart(3,'0'),gf=p[3]!=='biber'&&p[0]!==0;return `<article class="karte"><div class="bild" data-zoom="img/pl/${f}.webp" data-cap="${p[1]} · ${chf(p[2])}"><img src="img/p/${f}.webp" alt="${p[1]}" loading="lazy">${gf?`<span class="badge">${ear}glutenfrei</span>`:p[3]==='biber'?'<span class="badge nogf">mit Gluten</span>':''}</div><div class="unt"><div><div class="nm">${p[1]}</div><span class="pr">${chf(p[2])}</span></div><button class="plus" data-add="${p[0]}" aria-label="${p[1]} ins Paket">${plusSvg}</button></div></article>`}).join(''):'<div class="leer">Nichts gefunden – versuchen Sie «Brot», «Kuchen» oder «Cookies».</div>';
   r.scrollLeft=0;r.style.gridTemplateRows=list.length<=4&&innerWidth>767?'auto':'';upd('regal')}
 shop();
 
@@ -829,7 +830,7 @@ document.addEventListener('click',e=>{const l=e.target.closest('[data-l]'),r=e.t
 addEventListener('resize',()=>['regal','jahre','zitate'].forEach(upd));
 
 /* Catering */
-const ARTEN=['Apéro','Frühstück','Brunch','Stehdinner','Flying Lunch','Meterbrot','Biberbacken für Gruppen'];
+const ARTEN=['Apéro','Frühstück','Brunch','Stehdinner','Flying Lunch','Meterbrot','Backkurs für Gruppen'];
 const ANL=['Firmenanlass','Geburtstag','Hochzeit','Familienfest','Weihnachtsfeier','Trauerfeier'];
 let art=new Set(['Apéro']),anl='Firmenanlass',gst=40,gfOn=false;
 $('#artchips').innerHTML=ARTEN.map(a=>`<button class="chip${art.has(a)?' sel':''}" data-a="${a}">${a}</button>`).join('');
