@@ -512,6 +512,8 @@ footer{background:transparent;color:var(--muted);border-top:0}
   .vorschau{margin-top:10px;padding:10px 14px}
   .catbild{min-height:0}
 }
+/* Tablet hochkant wie Telefon (Julia 23.11): Touch bis 1100 px – wischen + Punkte, keine Pfeile */
+@media (max-width:1100px) and (pointer:coarse){.pfeil{display:none!important}.punkte{display:flex;justify-content:center;gap:7px;margin-top:10px}}
 @media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.js .fade{opacity:1;transform:none}.mini{opacity:1;transform:none}}
 .mini>div{min-width:0;flex:1 1 auto}.mini .nm{hyphens:auto;-webkit-hyphens:auto}@media(max-width:600px){.mini .nm{font-size:14px}}.mini .plus,.mini img{flex:none}.karte .unt>div{min-width:0}.karte .nm{hyphens:auto;-webkit-hyphens:auto}.karte .unt .plus{flex:none}.mini .pr{margin-left:0}@media (min-width:768px) and (max-height:800px){.shop{padding-top:14px;padding-bottom:14px}.shop .sh h2{font-size:clamp(26px,2.5vw,34px)}}</style>
 </head>
@@ -553,7 +555,7 @@ footer{background:transparent;color:var(--muted);border-top:0}
       <div class="heute" data-heute></div>
       <div class="adr"><a href="https://maps.google.com/?q=Gais+AR" target="_blank" rel="noopener">Dorfplatz 7, Gais</a> · <a href="tel:+41710001234">071 000 12 34</a><span>|</span><a href="https://maps.google.com/?q=B%C3%BChler+AR" target="_blank" rel="noopener">Bahnhofstrasse 4, Bühler</a> · <a href="tel:+41710005678">071 000 56 78</a></div>
     </div>
-    <div class="theke" data-theke><div class="t"><span>Frisch aus dem Ofen</span><span>ohne Gluten</span></div></div>
+    <div class="theke" data-theke><div class="t"><span>Aus dem Ofen</span><span>ohne Gluten</span></div></div>
   </div>
 </section>
 
