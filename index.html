@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="google" content="notranslate">
 <meta name="robots" content="noindex, nofollow">
-<title>Backstube Sonnenberg · Gais & Bühler · glutenfrei seit 1991</title>
+<title>Backstube Sonnenberg · Holzofen ohne Gluten · Gais & Bühler</title>
 <meta name="description" content="Musterentwurf einer Website für eine Bäckerei mit glutenfreiem Onlineshop. Namen und Angaben sind fiktiv.">
 <meta property="og:title" content="Backstube Sonnenberg · Musterentwurf">
 <meta property="og:description" content="Musterentwurf – Namen und Angaben fiktiv.">
@@ -494,8 +494,26 @@ footer{background:transparent;color:var(--muted);border-top:0}
   .stimmen{padding-top:28px}
   .jahre{grid-auto-columns:78%}
 }
+/* 1024: Kontakt-Karte 3 über die volle Breite, kein Loch rechts (Holly 25.11) */
+@media (min-width:768px) and (max-width:1100px){.kgrid .kk:nth-child(3){grid-column:1/-1}}
+/* niedrige Bildschirme (1280×720): Laden und Catering passen in einen Bildschirm (18a) */
+@media (min-width:768px) and (max-height:800px){
+  .shop{padding-top:22px;padding-bottom:22px}
+  .shop .sh{margin-bottom:12px}.shop .sh h2{font-size:clamp(28px,3vw,40px)}
+  .shopbar{margin-bottom:10px}
+  .karte .bild{aspect-ratio:2/1}
+  .cat{padding-top:24px;padding-bottom:24px}
+  .planer{padding:20px 22px}
+  .cath{font-size:clamp(26px,2.6vw,36px);margin-bottom:4px}
+  .catp{font-size:14px}
+  .planer .q{margin:9px 0 5px}
+  .chips{gap:6px}.chip{padding:5px 11px;font-size:13.5px}
+  .gaeste input{height:22px}.gaeste b{font-size:22px}
+  .vorschau{margin-top:10px;padding:10px 14px}
+  .catbild{min-height:0}
+}
 @media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.js .fade{opacity:1;transform:none}.mini{opacity:1;transform:none}}
-.mini>div{min-width:0;flex:1 1 auto}.mini .nm{hyphens:auto;-webkit-hyphens:auto}@media(max-width:600px){.mini .nm{font-size:14px}}.mini .plus,.mini img{flex:none}.karte .unt>div{min-width:0}.karte .nm{hyphens:auto;-webkit-hyphens:auto}.karte .unt .plus{flex:none}.mini .pr{margin-left:0}</style>
+.mini>div{min-width:0;flex:1 1 auto}.mini .nm{hyphens:auto;-webkit-hyphens:auto}@media(max-width:600px){.mini .nm{font-size:14px}}.mini .plus,.mini img{flex:none}.karte .unt>div{min-width:0}.karte .nm{hyphens:auto;-webkit-hyphens:auto}.karte .unt .plus{flex:none}.mini .pr{margin-left:0}@media (min-width:768px) and (max-height:800px){.shop{padding-top:14px;padding-bottom:14px}.shop .sh h2{font-size:clamp(26px,2.5vw,34px)}}</style>
 </head>
 <body>
 
@@ -503,7 +521,7 @@ footer{background:transparent;color:var(--muted);border-top:0}
   <div class="wrap">
     <a class="brand" href="#top" aria-label="Backstube Sonnenberg – nach oben"><svg viewBox="0 0 40 40" width="34" height="34" aria-hidden="true"><circle cx="20" cy="20" r="18" fill="#E0A43A"/><path d="M6 27c5-6 9-9 14-9s9 3 14 9" fill="none" stroke="#3A2317" stroke-width="2.4" stroke-linecap="round"/><path d="M11 31h18" stroke="#3A2317" stroke-width="2.4" stroke-linecap="round"/></svg><span><span class="n">Sonnenberg</span><span class="s">Backstube · Konditorei</span></span></a>
     <nav class="main">
-      <a href="#shop">Glutenfrei-Shop</a><a href="#cafes">Cafés</a><a href="#catering">Catering</a><a href="#seit1991">Seit 1991</a><a href="#kontakt">Kontakt</a>
+      <a href="#shop">Ofenladen</a><a href="#cafes">Kafistuben</a><a href="#catering">Anlässe</a><a href="#seit1991">Geschichte</a><a href="#kontakt">Kontakt</a>
     </nav>
     <button class="paketbtn" data-paket aria-label="Paket öffnen"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"><path d="M3 7.5 12 3l9 4.5v9L12 21l-9-4.5z"/><path d="M3 7.5 12 12l9-4.5M12 12v9M7.5 5.2l9 4.6"/></svg><span class="t">Paket</span><span class="cnt" data-cnt>0</span></button>
     <button class="burger" aria-label="Menü" id="burger"><span></span><span></span><span></span></button>
@@ -512,7 +530,7 @@ footer{background:transparent;color:var(--muted);border-top:0}
 
 <div class="mmenu" id="mmenu">
   <button class="zu" id="mzu" aria-label="Menü schliessen"><svg width="22" height="22" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M5 5l14 14M19 5 5 19"/></svg></button>
-  <a href="#shop">Glutenfrei-Shop</a><a href="#cafes">Cafés</a><a href="#catering">Catering</a><a href="#seit1991">Seit 1991</a><a href="#kontakt">Kontakt</a>
+  <a href="#shop">Ofenladen</a><a href="#cafes">Kafistuben</a><a href="#catering">Anlässe</a><a href="#seit1991">Geschichte</a><a href="#kontakt">Kontakt</a>
   <div style="margin-top:auto;display:grid;gap:10px">
     <a class="btn rot" href="tel:+41710001234" style="font-family:"Golos Text";font-size:16px;color:#fff;justify-content:center">Gais anrufen · 071 000 12 34</a>
     <a class="btn hell" href="tel:+41710005678" style="font-family:"Golos Text";font-size:16px;justify-content:center">Bühler anrufen · 071 000 56 78</a>
@@ -525,17 +543,17 @@ footer{background:transparent;color:var(--muted);border-top:0}
   <div class="bg"><picture><source media="(max-width:767px)" srcset="img/s_hero_m.webp"><img src="img/s_hero_l.webp" alt="Brote in der Auslage der Backstube" fetchpriority="high"></picture></div>
   <div class="in">
     <div>
-      <span class="kick"><i></i>Gais &amp; Bühler · seit 1991</span>
-      <h1>Glutenfrei gebacken.<br> <em>Man schmeckt’s nicht.</em></h1>
-      <p class="lead">Über 40 glutenfreie Brote, Gipfeli und Kuchen aus eigener Backstube – per Post in die ganze Schweiz. Und zwei Bäckercafés im Appenzellerland.</p>
+      <span class="kick"><i></i>Holzofen · Hirse-Sauerteig</span>
+      <h1>Langsam gebacken.<br> <em>Ganz ohne Gluten.</em></h1>
+      <p class="lead">Jeder Teig ruht 24 Stunden, dann kommt er in den Holzofen am Dorfplatz. Brot und Kuchen verschicken wir schweizweit, und zwei Kafistuben schenken aus.</p>
       <div class="cta">
-        <a class="btn rot" href="#shop"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><path d="M3 7.5 12 3l9 4.5v9L12 21l-9-4.5z"/><path d="M3 7.5 12 12l9-4.5M12 12v9"/></svg>Glutenfrei bestellen</a>
-        <a class="btn glas" href="#cafes">Cafés &amp; Läden</a>
+        <a class="btn rot" href="#shop"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><path d="M3 7.5 12 3l9 4.5v9L12 21l-9-4.5z"/><path d="M3 7.5 12 12l9-4.5M12 12v9"/></svg>Brot bestellen</a>
+        <a class="btn glas" href="#cafes">Kafistuben</a>
       </div>
       <div class="heute" data-heute></div>
       <div class="adr"><a href="https://maps.google.com/?q=Gais+AR" target="_blank" rel="noopener">Dorfplatz 7, Gais</a> · <a href="tel:+41710001234">071 000 12 34</a><span>|</span><a href="https://maps.google.com/?q=B%C3%BChler+AR" target="_blank" rel="noopener">Bahnhofstrasse 4, Bühler</a> · <a href="tel:+41710005678">071 000 56 78</a></div>
     </div>
-    <div class="theke" data-theke><div class="t"><span>Heute beliebt</span><span>glutenfrei</span></div></div>
+    <div class="theke" data-theke><div class="t"><span>Frisch aus dem Ofen</span><span>ohne Gluten</span></div></div>
   </div>
 </section>
 
@@ -547,7 +565,7 @@ footer{background:transparent;color:var(--muted);border-top:0}
       <h1>Brot für alle.<br><span>Auch ohne Gluten.</span></h1>
       <p class="lead">Aus dem Appenzellerland: glutenfreie Spezialitäten per Post – vom Buchweizenbrot bis zur Rüeblitorte. Dazu zwei Bäckercafés und Catering.</p>
       <div class="cta">
-        <a class="btn rot" href="#shop">Glutenfrei bestellen</a>
+        <a class="btn rot" href="#shop">Brot bestellen</a>
         <a class="btn hell" href="#cafes">Cafés &amp; Läden</a>
       </div>
       <div class="heute" data-heute></div>
@@ -565,7 +583,7 @@ footer{background:transparent;color:var(--muted);border-top:0}
 
 <section class="tage" id="zeiten">
   <div class="wrap">
-    <h2>Offen &amp; Backtage<small>Tag antippen – Zeiten beider Läden</small></h2>
+    <h2>Wochenplan<small>Einen Tag wählen – Gais und Bühler</small></h2>
     <div class="woche" id="woche"></div>
     <div class="zeiten" id="zeiten2"></div>
     <div class="bthint" id="bthint"></div>
@@ -576,8 +594,8 @@ footer{background:transparent;color:var(--muted);border-top:0}
 <section class="sec shop" id="shop">
   <div class="wrap">
     <div class="sh fade">
-      <h2>Der glutenfreie Laden.<br><em>Per Post in die ganze Schweiz.</em></h2>
-      <div class="shr"><p>Gebacken in einem separaten Raum. Bild antippen = gross ansehen, <b>+</b> legt es ins Paket.</p><label class="such"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m20 20-4-4"/></svg><input id="such" type="search" placeholder="Suchen: Brot, Cookies …" aria-label="Produkte suchen"></label></div>
+      <h2>Aus dem Holzofen.<br><em>Ins Paket und ab die Post.</em></h2>
+      <div class="shr"><p>Mit eigenem Hirse-Sauerteig, ohne Weizen, Roggen und Gerste. Bild antippen zeigt es gross, <b>+</b> packt es ein.</p><label class="such"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m20 20-4-4"/></svg><input id="such" type="search" placeholder="Suchen: Brot, Cookies …" aria-label="Produkte suchen"></label></div>
     </div>
     <div class="shopbar fade">
       <div class="kats" id="kats"></div>
@@ -600,16 +618,16 @@ footer{background:transparent;color:var(--muted);border-top:0}
 <section class="sec gfsec" id="glutenfrei">
   <div class="wrap gfgrid">
     <div class="gfbild fade" data-zoom="img/s_backstube_l.webp"><img src="img/s_backstube.webp" alt="Glutenfreier Teig und verschiedene Mehlsorten" loading="lazy">
-      <div class="st"><b>Unser erstes glutenfreies Brot</b> buken wir 1991 für ein Kind aus dem Dorf. Heute sind es über 40.</div></div>
+      <div class="st"><b>Unser Hirse-Sauerteig</b> wird seit 1991 jeden Abend gefüttert – er ist älter als die zweite Generation.</div></div>
     <div class="gftext fade">
-      <h2>Glutenfrei ist bei uns <em>kein Trend.</em></h2>
-      <p>1991 eröffnete die Familie Sonnenberg ihre Backstube am Dorfplatz in Gais – und backte schon im ersten Jahr glutenfrei. Heute führt die zweite Generation den Betrieb.</p>
-      <p>Glutenfreies backen wir in einem eigenen, abgetrennten Raum – getrennt von der täglichen Produktion.</p>
+      <h2>Zeit ist unsere <em>wichtigste Zutat.</em></h2>
+      <p>1991 hat die Familie Sonnenberg den Holzofen am Dorfplatz in Gais zum ersten Mal angefeuert. Gebacken wird mit Buchweizen, Hirse, Mais und Kastanie – Weizen kommt nicht in den Teig.</p>
+      <p>Jeder Teig ruht mindestens 24 Stunden, bevor er in den Ofen kommt. So wird die Krume feucht und das Brot hält länger frisch.</p>
       <div class="fakten">
-        <div class="fakt"><b>seit 1991</b><span>glutenfreie Backstube im Familienbetrieb</span></div>
-        <div class="fakt"><b>40+</b><span>glutenfreie Produkte im Laden</span></div>
-        <div class="fakt"><b>Di · Mi · Fr</b><span>Backtage für den Versand</span></div>
-        <div class="fakt"><b>1 Raum</b><span>nur für Glutenfreies – getrennt von der übrigen Backstube</span></div>
+        <div class="fakt"><b>1991</b><span>erstes Feuer im Holzofen am Dorfplatz</span></div>
+        <div class="fakt"><b>24 h</b><span>Teigruhe für jedes Brot</span></div>
+        <div class="fakt"><b>Di · Mi · Fr</b><span>Ofentage für den Versand</span></div>
+        <div class="fakt"><b>0 g</b><span>Gluten in unseren Teigen</span></div>
       </div>
       
     </div>
@@ -619,7 +637,7 @@ footer{background:transparent;color:var(--muted);border-top:0}
 
 <section class="sec cafes" id="cafes">
   <div class="wrap">
-    <div class="sh fade"><h2>Zwei Bäckercafés.<br><em>Znüni, Zmittag, Zmorge.</em></h2><p>Saisonale und regionale Znüni, kleine Mittagssnacks und ein feines Morgenessen – direkt aus der eigenen Backstube.</p></div>
+    <div class="sh fade"><h2>Zwei Kafistuben.<br><em>Mit Ofenwärme.</em></h2><p>In Gais sitzt man auf der Terrasse am Dorfplatz, in Bühler in der kleinen Stube mit Blick ins Grüne. Auf dem Tisch: Brot vom Morgen, Konfi aus dem eigenen Topf und Kaffee aus der Dorfrösterei.</p></div>
     <div class="cgrid">
       <article class="cafe fade">
         <div class="cb" data-zoom="img/s_cafe_l.webp"><img src="img/s_cafe.webp" alt="Café am Dorfplatz" loading="lazy"></div>
@@ -629,7 +647,7 @@ footer{background:transparent;color:var(--muted);border-top:0}
           <div class="pl"><span>22 Plätze</span><span>Terrasse</span><span>seit 2019</span></div>
           <p data-cafe="w"></p>
           <div class="zit">Das Zmorge mit frischen Gipfeli ist jeden Samstag unser Ritual.<small>Simone K. (fiktiv)</small></div>
-          <div class="acts"><a class="btn rot" href="tel:+41710001234">Anrufen</a><a class="btn hell" href="https://maps.google.com/?q=Gais+AR" target="_blank" rel="noopener">Route</a></div>
+          <div class="acts"><a class="btn rot" href="tel:+41710001234">Telefon</a><a class="btn hell" href="https://maps.google.com/?q=Gais+AR" target="_blank" rel="noopener">Wegbeschreibung</a></div>
         </div>
       </article>
       <article class="cafe fade">
@@ -640,7 +658,7 @@ footer{background:transparent;color:var(--muted);border-top:0}
           <div class="pl"><span>14 Plätze</span><span>seit 2024</span><span>Mo Ruhetag</span></div>
           <p data-cafe="u"></p>
           <div class="zit">Kleine Stube, grosser Kaffee – und immer ein freundliches Wort.<small>Reto B. (fiktiv)</small></div>
-          <div class="acts"><a class="btn rot" href="tel:+41710005678">Anrufen</a><a class="btn hell" href="https://maps.google.com/?q=B%C3%BChler+AR" target="_blank" rel="noopener">Route</a></div>
+          <div class="acts"><a class="btn rot" href="tel:+41710005678">Telefon</a><a class="btn hell" href="https://maps.google.com/?q=B%C3%BChler+AR" target="_blank" rel="noopener">Wegbeschreibung</a></div>
         </div>
       </article>
     </div>
@@ -651,20 +669,20 @@ footer{background:transparent;color:var(--muted);border-top:0}
 <section class="sec cat" id="catering">
   <div class="wrap">
     <div class="catgrid">
-      <div class="catbild fade" data-zoom="img/s_catering_l.webp"><picture><source media="(max-width:767px)" srcset="img/s_catering_m.webp"><img src="img/s_catering.webp" alt="Apéro-Buffet" loading="lazy"></picture><span class="lab">Apéro &amp; Buffet</span></div>
+      <div class="catbild fade" data-zoom="img/s_catering_l.webp"><picture><source media="(max-width:767px)" srcset="img/s_catering_m.webp"><img src="img/s_catering.webp" alt="Apéro-Buffet" loading="lazy"></picture><span class="lab">Aus dem Ofen</span></div>
       <div class="planer fade">
-        <h2 class="cath">Sonnenberg Catering. <em>Auch glutenfrei.</em></h2>
-        <p class="catp">Gefüllte Meterbrote, Brote als Herz, Schlüssel oder Zahl, Spiessli, Chüechli und Patisserie – für Firma, Familie und Fest. Wählen Sie, wir melden uns mit einem Angebot.</p>
-        <div class="q">Was darf es sein?</div>
+        <h2 class="cath">Für Ihren Anlass. <em>Ganz ohne Gluten.</em></h2>
+        <p class="catp">Belegte Holzofenbrote, Fladen vom Blech, kleine Wähen und Tartelettes – für Sitzung, Taufe oder Dorffest. Sagen Sie uns, was Sie planen, wir schicken ein Angebot.</p>
+        <div class="q">Was planen Sie?</div>
         <div class="chips" id="artchips"></div>
-        <div class="q">Anlass</div>
+        <div class="q">Wofür?</div>
         <div class="chips" id="anlasschips"></div>
-        <div class="q">Gäste</div>
+        <div class="q">Wie viele Personen?</div>
         <div class="gaeste"><input type="range" id="gaeste" min="10" max="200" step="5" value="40" aria-label="Anzahl Gäste"><b id="gzahl">40</b></div>
-        <div class="q">Glutenfrei</div>
-        <div class="schalter" id="gfschalter" role="switch" aria-checked="false" tabindex="0"><i></i><span>Ein Teil der Gäste isst glutenfrei</span></div>
+        <div class="q">Vegan</div>
+        <div class="schalter" id="gfschalter" role="switch" aria-checked="false" tabindex="0"><i></i><span>Einige essen vegan</span></div>
         <div class="vorschau" id="vorschau"></div>
-        <div class="acts"><a class="btn rot" id="mailcat" href="#">Anfrage per E-Mail</a></div>
+        <div class="acts"><a class="btn rot" id="mailcat" href="#">Angebot anfragen</a></div>
       </div>
     </div>
   </div>
@@ -673,14 +691,14 @@ footer{background:transparent;color:var(--muted);border-top:0}
 
 <section class="sec chronik" id="seit1991">
   <div class="wrap">
-    <div class="sh fade"><h2>Ein Familienbetrieb.<br><em>Seit 1991.</em></h2><p>Zwei Generationen, zwei Dörfer, eine Backstube für alle.</p></div>
+    <div class="sh fade"><h2>Unsere Geschichte.<br><em>In vier Schritten.</em></h2><p>Vom ersten Ofenfeuer bis zur zweiten Kafistube.</p></div>
     <div class="regalwrap fade">
       <button class="pfeil l" data-l="jahre" aria-label="Zurück"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 5l-7 7 7 7"/></svg></button>
       <div class="jahre" id="jahre">
-        <article class="jahr"><div class="jt"><span class="z">1991</span><h3>Die Backstube am Dorfplatz</h3><p>Eröffnung in Gais – und das erste glutenfreie Brot im selben Jahr.</p></div></article>
-        <article class="jahr"><div class="jt"><span class="z">2006</span><h3>Bühler kommt dazu</h3><p>Die zweite Filiale – mit kleiner Konditorei und Kafi-Stube.</p></div></article>
-        <article class="jahr"><div class="jt"><span class="z">2015</span><h3>Der Onlineshop</h3><p>Glutenfreies per Post in die ganze Schweiz – meist am nächsten Tag.</p></div></article>
-        <article class="jahr"><div class="jt"><span class="z">2019 · 2024</span><h3>Zwei Cafés</h3><p>2019 das Café am Dorfplatz in Gais, 2024 die Kafi-Stube in Bühler.</p></div></article>
+        <article class="jahr"><div class="jt"><span class="z">1991</span><h3>Das erste Ofenfeuer</h3><p>Der Holzofen am Dorfplatz in Gais brennt – von Anfang an ohne Weizen.</p></div></article>
+        <article class="jahr"><div class="jt"><span class="z">2006</span><h3>Die Konditorei in Bühler</h3><p>Torten, Tartelettes und Guetzli bekommen ein eigenes Haus.</p></div></article>
+        <article class="jahr"><div class="jt"><span class="z">2015</span><h3>Das erste Paket</h3><p>Brot geht auf die Reise – dienstags bis freitags, frisch aus dem Ofen.</p></div></article>
+        <article class="jahr"><div class="jt"><span class="z">2019 · 2024</span><h3>Zwei Kafistuben</h3><p>2019 in Gais, 2024 in Bühler – mit Brot vom Morgen auf dem Tisch.</p></div></article>
       </div>
       <button class="pfeil r" data-r="jahre" aria-label="Weiter"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 5l7 7-7 7"/></svg></button>
     </div>
@@ -691,7 +709,7 @@ footer{background:transparent;color:var(--muted);border-top:0}
 
 <section class="sec stimmen" id="stimmen">
   <div class="wrap">
-    <div class="sh fade"><h2>«Hier stimmt <em>einfach alles.</em>»</h2><div class="sterne"><b>5,0</b><span><span style="color:var(--gold);letter-spacing:2px">★★★★★</span><br>Bewertungen (fiktiv)</span></div></div>
+    <div class="sh fade"><h2>«Wie früher <em>beim Dorfbeck.</em>»</h2><div class="sterne"><b>5,0</b><span><span style="color:var(--gold);letter-spacing:2px">★★★★★</span><br>Bewertungen (fiktiv)</span></div></div>
     <div class="regalwrap fade">
       <button class="pfeil l" data-l="zitate" aria-label="Zurück"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 5l-7 7 7 7"/></svg></button>
       <div class="zitate" id="zitate">
@@ -699,7 +717,7 @@ footer{background:transparent;color:var(--muted);border-top:0}
         <div class="zitat"><span class="s">★★★★★</span><q>Seit drei Jahren bestellen wir jede Woche – das Paket kommt zuverlässig am nächsten Tag.</q><span class="w"><b>Thomas W.</b> · fiktiv</span></div>
         <div class="zitat"><span class="s">★★★★★</span><q>Echte Backkunst, freundliches Team und immer frische Ware.</q><span class="w"><b>Claudia R.</b> · fiktiv</span></div>
         <div class="zitat"><span class="s">★★★★★</span><q>Die glutenfreien Guetzli sind an Weihnachten bei uns jedes Jahr zuerst weg.</q><span class="w"><b>Marco S.</b> · fiktiv</span></div>
-        <div class="zitat"><span class="s">★★★★★</span><q>Für Zöliakie-Betroffene ein kleines Paradies im Appenzellerland.</q><span class="w"><b>Daniela F.</b> · fiktiv</span></div>
+        <div class="zitat"><span class="s">★★★★★</span><q>Seit der Zöliakie-Diagnose wieder Freude am Frühstücksbrot.</q><span class="w"><b>Daniela F.</b> · fiktiv</span></div>
         <div class="zitat"><span class="s">★★★★★</span><q>Unser Firmen-Apéro war liebevoll gemacht – auch für die glutenfreien Gäste.</q><span class="w"><b>Peter H.</b> · fiktiv</span></div>
         <div class="zitat"><span class="s">★★★★★</span><q>Feine Gipfeli und ein Kafi mit Aussicht.</q><span class="w"><b>Ursula L.</b> · fiktiv</span></div>
       </div>
@@ -712,9 +730,9 @@ footer{background:transparent;color:var(--muted);border-top:0}
 
 <section class="kontakt" id="kontakt">
   <div class="wrap kgrid">
-    <div class="kk fade"><span class="o">Hauptgeschäft</span><h3>Gais</h3><span>Dorfplatz 7 · 9056 Gais AR</span><a class="tel" href="tel:+41710001234">071 000 12 34</a><ul data-std="w"></ul><div class="acts"><a class="btn rot" href="tel:+41710001234">Anrufen</a><a class="btn glas" href="https://maps.google.com/?q=Gais+AR" target="_blank" rel="noopener">Route</a></div></div>
-    <div class="kk fade"><span class="o">Filiale · glutenfreie Backstube</span><h3>Bühler</h3><span>Bahnhofstrasse 4 · 9055 Bühler</span><a class="tel" href="tel:+41710005678">071 000 56 78</a><ul data-std="u"></ul><div class="acts"><a class="btn rot" href="tel:+41710005678">Anrufen</a><a class="btn glas" href="https://maps.google.com/?q=B%C3%BChler+AR" target="_blank" rel="noopener">Route</a></div></div>
-    <div class="kk fade"><span class="o">Onlineshop &amp; Catering</span><h3>Schreiben Sie uns</h3><a class="tel" href="mailto:info@backstube-sonnenberg.ch" style="font-size:19px">info@backstube-sonnenberg.ch</a><span style="font-size:14.5px">Musterentwurf – Namen, Adressen und Telefonnummern sind fiktiv.</span><span style="font-size:14.5px">Wir liefern innerhalb der Schweiz.</span><div class="acts"><a class="btn rot" href="#shop">Zum Shop</a><a class="btn glas" href="#catering">Catering</a></div></div>
+    <div class="kk fade"><span class="o">Hauptgeschäft</span><h3>Gais</h3><span>Dorfplatz 7 · 9056 Gais AR</span><a class="tel" href="tel:+41710001234">071 000 12 34</a><ul data-std="w"></ul><div class="acts"><a class="btn rot" href="tel:+41710001234">Telefon</a><a class="btn glas" href="https://maps.google.com/?q=Gais+AR" target="_blank" rel="noopener">Wegbeschreibung</a></div></div>
+    <div class="kk fade"><span class="o">Konditorei &amp; Kafistube</span><h3>Bühler</h3><span>Bahnhofstrasse 4 · 9055 Bühler</span><a class="tel" href="tel:+41710005678">071 000 56 78</a><ul data-std="u"></ul><div class="acts"><a class="btn rot" href="tel:+41710005678">Telefon</a><a class="btn glas" href="https://maps.google.com/?q=B%C3%BChler+AR" target="_blank" rel="noopener">Wegbeschreibung</a></div></div>
+    <div class="kk fade"><span class="o">Pakete &amp; Anlässe</span><h3>Per Mail</h3><a class="tel" href="mailto:info@backstube-sonnenberg.ch" style="font-size:19px">info@backstube-sonnenberg.ch</a><span style="font-size:14.5px">Musterentwurf – Namen, Adressen und Telefonnummern sind fiktiv.</span><span style="font-size:14.5px">Pakete gehen dienstags bis freitags raus.</span><div class="acts"><a class="btn rot" href="#shop">Ofenladen</a><a class="btn glas" href="#catering">Anlässe</a></div></div>
   </div>
 </section>
 </main>
@@ -725,14 +743,14 @@ footer{background:transparent;color:var(--muted);border-top:0}
 <aside class="paket" aria-label="Ihr Paket">
   <div class="kopf">
     <svg class="kiste" viewBox="0 0 54 46"><path d="M4 14 27 4l23 10v20L27 44 4 34z" fill="#C79F72"/><path d="M4 14l23 10 23-10M27 24v20" fill="none" stroke="#9C7650" stroke-width="1.5"/><path d="M15 9.2 38 19.3" stroke="#2F6B4F" stroke-width="4"/></svg>
-    <h3>Ihr Paket<small data-anz>noch leer</small></h3>
+    <h3>Ihr Paket<small data-anz>ist bereit</small></h3>
     <button class="zu" data-zu aria-label="Paket schliessen"><svg width="20" height="20" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M5 5l14 14M19 5 5 19"/></svg></button>
   </div>
   <div class="liste" id="liste"></div>
   <div class="fuss">
-    <div class="zeile"><span>Zwischensumme</span><span data-zw>CHF 0.00</span></div>
+    <div class="zeile"><span>Waren</span><span data-zw>CHF 0.00</span></div>
     <div class="zeile"><span>Versand</span><span data-vs>CHF 9.90</span></div>
-    <div class="zeile tot"><span>Total</span><span data-tot>CHF 0.00</span></div>
+    <div class="zeile tot"><span>Zu bezahlen</span><span data-tot>CHF 0.00</span></div>
     <div class="backinfo"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg><span data-bi></span></div>
     <button class="btn rot" id="kasse">Zur Kasse</button>
     <div class="demo" id="demo"></div>
@@ -770,7 +788,7 @@ const woche=$('#woche');[1,2,3,4,5,6,0].forEach(d=>{const b=document.createEleme
 function zeigTag(d){$$('.tag').forEach(t=>t.classList.toggle('sel',+t.dataset.d===d));
   const extra='';
   $('#zeiten2').innerHTML=`<div class="ort"><div class="o">Gais</div><div class="h">${fmt(slots('w',d))}</div></div><div class="ort"><div class="o">Bühler</div><div class="h">${fmt(slots('u',d))}</div>${extra}</div>`;
-  const nb=nextBack();$('#bthint').innerHTML=`<span><i></i>${BACK.includes(d)?'<b>'+TL[d]+' ist glutenfreier Backtag.</b>':TL[d]+': kein glutenfreier Backtag.'}</span><span>Nächster Backtag: <b>${nb.txt}</b></span><span>Bis 12 Uhr bestellt – am nächsten Backtag gebacken</span>`}
+  const nb=nextBack();$('#bthint').innerHTML=`<span><i></i>${BACK.includes(d)?'<b>'+TL[d]+': Ofentag für den Versand.</b>':TL[d]+': kein Versand-Ofen.'}</span><span>Nächster Ofentag: <b>${nb.txt}</b></span><span>Bis 12 Uhr bestellt – am nächsten Backtag gebacken</span>`}
 zeigTag(today);
 $$('[data-std]').forEach(ul=>{const o=ul.dataset.std;ul.innerHTML=[[2,'Di–Fr'],[1,'Montag'],[6,'Samstag'],[0,'Sonntag']].map(([d,l])=>`<li><span>${l}</span><span>${fmt(slots(o,d,new Date(2026,5,1)))}</span></li>`).join('')});
 $('[data-cafe="w"]').textContent='Mo–Fr 6:30–18:00 · Sa 6:30–14:00 · So 8:00–11:30.';
@@ -781,11 +799,11 @@ let korb={};try{korb=JSON.parse(localStorage.getItem('sonnPaket')||'{}')}catch(e
 const byId=id=>P.find(p=>p[0]===id);
 function save(){try{localStorage.setItem('sonnPaket',JSON.stringify(korb))}catch(e){}}
 function render(){const ids=Object.keys(korb).filter(k=>korb[k]>0);let n=0,zw=0;
-  $('#liste').innerHTML=ids.length?ids.map(k=>{const p=byId(+k),q=korb[k];n+=q;zw+=q*p[2];return `<div class="pos"><img src="img/p/${String(p[0]).padStart(3,'0')}.webp" alt=""><div><div class="nm">${p[1]}</div><div class="ep">${chf(p[2])}</div></div><div class="menge"><button data-m="${k}" aria-label="weniger">−</button><b>${q}</b><button data-pl="${k}" aria-label="mehr">+</button></div><div class="sum">${q*p[2]>0?(q*p[2]).toFixed(2):''}</div></div>`}).join(''):'<div class="leerpaket"><b>Noch nichts im Paket</b>Tippen Sie bei einem Produkt auf +</div>';
+  $('#liste').innerHTML=ids.length?ids.map(k=>{const p=byId(+k),q=korb[k];n+=q;zw+=q*p[2];return `<div class="pos"><img src="img/p/${String(p[0]).padStart(3,'0')}.webp" alt=""><div><div class="nm">${p[1]}</div><div class="ep">${chf(p[2])}</div></div><div class="menge"><button data-m="${k}" aria-label="weniger">−</button><b>${q}</b><button data-pl="${k}" aria-label="mehr">+</button></div><div class="sum">${q*p[2]>0?(q*p[2]).toFixed(2):''}</div></div>`}).join(''):'<div class="leerpaket"><b>Das Paket wartet</b>Mit + kommt ein Brot hinein</div>';
   $$('[data-cnt]').forEach(c=>c.textContent=n);
   $('[data-anz]').textContent=n?n+(n===1?' Artikel':' Artikel')+' · glutenfrei gebacken':'noch leer';
   const vs=n?(zw>=80?0:9.9):0;$('[data-zw]').textContent=chf(zw);$('[data-vs]').textContent=n?chf(vs):'–';$('[data-tot]').textContent=chf(zw+vs);
-  const nb=nextBack();$('[data-bi]').innerHTML=`Frisch gebacken an den Backtagen <b>Di, Mi und Fr</b> und am selben Tag verschickt. Bis 12 Uhr bestellt – am nächsten Backtag gebacken. Ab CHF 80 portofrei.`;
+  const nb=nextBack();$('[data-bi]').innerHTML=`Der Ofen brennt für Pakete am <b>Di, Mi und Fr</b> – was morgens gebacken ist, geht mittags zur Post. Ab CHF 80 ohne Porto.`;
   $('.paketfab').classList.toggle('zeig',n>0||scrollY>innerHeight*.8)}
 function add(id,fromImg){korb[id]=(korb[id]||0)+1;save();render();
   const tgt=innerWidth<768?$('.paketfab'):$('header .paketbtn');
@@ -834,17 +852,17 @@ document.addEventListener('click',e=>{const l=e.target.closest('[data-l]'),r=e.t
 addEventListener('resize',()=>['regal','jahre','zitate'].forEach(upd));
 
 /* Catering */
-const ARTEN=['Apéro','Frühstück','Brunch','Stehdinner','Flying Lunch','Meterbrot','Backkurs für Gruppen'];
-const ANL=['Firmenanlass','Geburtstag','Hochzeit','Familienfest','Weihnachtsfeier','Trauerfeier'];
-let art=new Set(['Apéro']),anl='Firmenanlass',gst=40,gfOn=false;
+const ARTEN=['Apéro','Zmorge-Buffet','Fladenbuffet','Sitzungsplatte','Wähenblech','Tarteletten','Ofenkurs'];
+const ANL=['Sitzung','Geburtstag','Hochzeit','Taufe','Vereinsfest','Abdankung'];
+let art=new Set(['Apéro']),anl='Sitzung',gst=40,gfOn=false;
 $('#artchips').innerHTML=ARTEN.map(a=>`<button class="chip${art.has(a)?' sel':''}" data-a="${a}">${a}</button>`).join('');
 $('#anlasschips').innerHTML=ANL.map(a=>`<button class="chip${a===anl?' sel':''}" data-n="${a}">${a}</button>`).join('');
 $('#artchips').onclick=e=>{const b=e.target.closest('.chip');if(!b)return;const a=b.dataset.a;art.has(a)&&art.size>1?art.delete(a):art.add(a);b.classList.toggle('sel',art.has(a));cv()};
 $('#anlasschips').onclick=e=>{const b=e.target.closest('.chip');if(!b)return;anl=b.dataset.n;$$('#anlasschips .chip').forEach(c=>c.classList.toggle('sel',c===b));cv()};
 $('#gaeste').oninput=e=>{gst=+e.target.value;$('#gzahl').textContent=gst;cv()};
 const sw=$('#gfschalter');const tog=()=>{gfOn=!gfOn;sw.classList.toggle('on',gfOn);sw.setAttribute('aria-checked',gfOn);cv()};sw.onclick=tog;sw.onkeydown=e=>{if(e.key===' '||e.key==='Enter'){e.preventDefault();tog()}};
-function cv(){const a=[...art].join(', ');$('#vorschau').innerHTML=`<b>${a}</b> für <b>${anl}</b> mit <b>${gst} Gästen</b>${gfOn?' – <b>teilweise glutenfrei</b>':''}.`;
-  const body=`Grüezi Sonnenberg-Team\n\nWir planen: ${a}\nAnlass: ${anl}\nGäste: ca. ${gst}\nGlutenfrei: ${gfOn?'ja, für einen Teil der Gäste':'nein'}\nDatum: \nOrt: \n\nFreundliche Grüsse`;
+function cv(){const a=[...art].join(', ');$('#vorschau').innerHTML=`<b>${a}</b> für <b>${anl}</b> · <b>${gst} Personen</b>${gfOn?' · <b>mit veganen Teilen</b>':''}.`;
+  const body=`Grüezi Sonnenberg-Team\n\nWir planen: ${a}\nAnlass: ${anl}\nGäste: ca. ${gst}\nVegan: ${gfOn?'ja, für einige Personen':'nein'}\nDatum: \nOrt: \n\nFreundliche Grüsse`;
   $('#mailcat').href='mailto:info@backstube-sonnenberg.ch?subject='+encodeURIComponent('Catering-Anfrage: '+anl)+'&body='+encodeURIComponent(body)}
 cv();
 
