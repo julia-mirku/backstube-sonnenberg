@@ -563,9 +563,9 @@ footer{background:transparent;color:var(--muted);border-top:0}
 <section class="heroB" id="heroB">
   <div class="in">
     <div>
-      <span class="kick"><i></i>Bäckerei · Konditorei · seit 1991</span>
-      <h1>Brot für alle.<br><span>Auch ohne Gluten.</span></h1>
-      <p class="lead">Aus dem Appenzellerland: glutenfreie Spezialitäten per Post – vom Buchweizenbrot bis zur Rüeblitorte. Dazu zwei Bäckercafés und Catering.</p>
+      <span class="kick"><i></i>Holzofen · seit 1991</span>
+      <h1>Feuer, Zeit, Teig.<br><span>Sonst nichts.</span></h1>
+      <p class="lead">Holzofenbrot mit Hirse-Sauerteig, 24 Stunden geführt – vom Buchweizenlaib bis zur Rüeblitorte, per Paket oder in unseren Kafistuben in Gais und Bühler.</p>
       <div class="cta">
         <a class="btn rot" href="#shop">Brot bestellen</a>
         <a class="btn hell" href="#cafes">Cafés &amp; Läden</a>
@@ -754,7 +754,7 @@ footer{background:transparent;color:var(--muted);border-top:0}
     <div class="zeile"><span>Versand</span><span data-vs>CHF 9.90</span></div>
     <div class="zeile tot"><span>Zu bezahlen</span><span data-tot>CHF 0.00</span></div>
     <div class="backinfo"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg><span data-bi></span></div>
-    <button class="btn rot" id="kasse">Zur Kasse</button>
+    <button class="btn rot" id="kasse">Paket bestellen</button>
     <div class="demo" id="demo"></div>
   </div>
 </aside>
@@ -818,7 +818,7 @@ document.addEventListener('click',e=>{const a=e.target.closest('[data-add]');if(
   if(e.target.closest('[data-paket]')){document.body.classList.add('paketauf');return}
   if(e.target.closest('[data-zu]')){document.body.classList.remove('paketauf');return}
   const z=e.target.closest('[data-zoom]');if(z){lb(z.dataset.zoom,z.dataset.cap||'')}});
-$('#kasse').onclick=()=>{$('#demo').textContent='Im Entwurf ist die Kasse noch nicht aktiv.'};
+$('#kasse').onclick=()=>{$('#demo').textContent='Dies ist ein Muster – bestellt wird hier noch nichts.'};
 render();
 
 /* Theke Hero A */
