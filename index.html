@@ -544,6 +544,17 @@ main>section[id],body>section[id]{scroll-margin-top:84px}
 header.top{background:var(--mehl);backdrop-filter:none;-webkit-backdrop-filter:none}
 @media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.js .fade{opacity:1;transform:none}.mini{opacity:1;transform:none}}
 .mini>div{min-width:0;flex:1 1 auto}.mini .nm{hyphens:auto;-webkit-hyphens:auto}@media(max-width:600px){.mini .nm{font-size:14px}}.mini .plus,.mini img{flex:none}.karte .unt>div{min-width:0}.karte .nm{hyphens:auto;-webkit-hyphens:auto}.karte .unt .plus{flex:none}.mini .pr{margin-left:0}@media (min-width:768px) and (max-height:800px){.shop{padding-top:14px;padding-bottom:14px}.shop .sh h2{font-size:clamp(26px,2.5vw,34px)}}</style>
+<style id="philologe-26-11">
+.tp{display:inline}.pc{display:none}@media (hover:hover) and (pointer:fine){.pc{display:inline}.tp{display:none}}
+.nw{white-space:nowrap}
+</style>
+<style id="wiederholung-26-11">
+/* Anlass-Chips: gleichmässiges Raster, keiner allein in einer Zeile */
+#artchips{display:grid;grid-template-columns:repeat(3,1fr)}
+@media (max-width:480px){#artchips{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:1100px){#anlasschips{display:grid;grid-template-columns:repeat(3,1fr)}}
+.chips .chip{text-align:center}
+</style>
 </head>
 <body>
 
@@ -575,7 +586,7 @@ header.top{background:var(--mehl);backdrop-filter:none;-webkit-backdrop-filter:n
     <div>
       <span class="kick"><i></i>Holzofen · Hirse-Sauerteig</span>
       <h1>Langsam gebacken.<br> <em>Ganz ohne Gluten.</em></h1>
-      <p class="lead">Jeder Teig ruht 24 Stunden, dann kommt er in den Holzofen am Dorfplatz. Brot und Kuchen verschicken wir schweizweit, und zwei Kafistuben schenken aus.</p>
+      <p class="lead">Wir backen mit Geduld und Holzfeuer, ohne Abkürzungen, ohne Zusatzstoffe. Brot und Kuchen verschicken wir schweizweit, und in zwei Kafistuben schenken wir Kaffee aus.</p>
       <div class="cta">
         <a class="btn rot" href="#shop"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><path d="M3 7.5 12 3l9 4.5v9L12 21l-9-4.5z"/><path d="M3 7.5 12 12l9-4.5M12 12v9"/></svg>Brot bestellen</a>
         <a class="btn glas" href="#cafes">Kafistuben</a>
@@ -591,9 +602,9 @@ header.top{background:var(--mehl);backdrop-filter:none;-webkit-backdrop-filter:n
 <section class="heroB" id="heroB">
   <div class="in">
     <div>
-      <span class="kick"><i></i>Holzofen · seit 1991</span>
+      <span class="kick"><i></i>Holzofen · Gais AR</span>
       <h1>Feuer, Zeit, Teig.<br><span>Sonst nichts.</span></h1>
-      <p class="lead">Holzofenbrot mit Hirse-Sauerteig, 24 Stunden geführt – vom Buchweizenlaib bis zur Rüeblitorte, per Paket oder in unseren Kafistuben in Gais und Bühler.</p>
+      <p class="lead">Holzofenbrot mit Hirse-Sauerteig, lange geführt – vom Buchweizenlaib bis zur Rüeblitorte, per Paket oder in unseren Kafistuben in Gais und Bühler.</p>
       <div class="cta">
         <a class="btn rot" href="#shop">Brot bestellen</a>
         <a class="btn hell" href="#cafes">Cafés &amp; Läden</a>
@@ -625,7 +636,7 @@ header.top{background:var(--mehl);backdrop-filter:none;-webkit-backdrop-filter:n
   <div class="wrap">
     <div class="sh fade">
       <h2>Aus dem Holzofen.<br><em>Ins Paket und ab die Post.</em></h2>
-      <div class="shr"><p>Mit eigenem Hirse-Sauerteig, ohne Weizen, Roggen und Gerste. Bild antippen zeigt es gross, <b>+</b> packt es ein.</p><label class="such"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m20 20-4-4"/></svg><input id="such" type="search" placeholder="Suchen: Brot, Cookies …" aria-label="Produkte suchen"></label></div>
+      <div class="shr"><p>Mit eigenem Hirse-Sauerteig, ohne Weizen, Roggen und Gerste. <span class="tp">Bild antippen</span><span class="pc">Bild anklicken</span>: gross ansehen; <b>+</b> packt es ein.</p><label class="such"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m20 20-4-4"/></svg><input id="such" type="search" placeholder="Suchen: Brot, Guetzli …" aria-label="Produkte suchen"></label></div>
     </div>
     <div class="shopbar fade">
       <div class="kats" id="kats"></div>
@@ -638,8 +649,8 @@ header.top{background:var(--mehl);backdrop-filter:none;-webkit-backdrop-filter:n
     <div class="punkte" data-p="regal"></div>
     <div class="versand fade">
       <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 7.5 12 3l9 4.5v9L12 21l-9-4.5z"/></svg>Versand CHF 9.90 – ab CHF 80 portofrei</span>
-      <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>Versand Dienstag bis Freitag</span>
-      <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12l5 5L20 7"/></svg>Bis 12 Uhr bestellt – am nächsten Backtag gebacken</span>
+      <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>Versand Di, Mi und Fr</span>
+      <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12l5 5L20 7"/></svg>Bis 12 Uhr bestellt – am nächsten Ofentag gebacken</span>
     </div>
   </div>
 </section>
@@ -648,14 +659,14 @@ header.top{background:var(--mehl);backdrop-filter:none;-webkit-backdrop-filter:n
 <section class="sec gfsec" id="glutenfrei">
   <div class="wrap gfgrid">
     <div class="gfbild fade" data-zoom="img/s_backstube_l.webp"><img src="img/s_backstube.webp" alt="Glutenfreier Teig und verschiedene Mehlsorten" loading="lazy">
-      <div class="st"><b>Unser Hirse-Sauerteig</b> wird seit 1991 jeden Abend gefüttert – er ist älter als die zweite Generation.</div></div>
+      <div class="st"><b>Unser Hirse-Sauerteig</b> wird jeden Abend gefüttert – so alt wie unser Ofen.</div></div>
     <div class="gftext fade">
       <h2>Zeit ist unsere <em>wichtigste Zutat.</em></h2>
-      <p>1991 hat die Familie Sonnenberg den Holzofen am Dorfplatz in Gais zum ersten Mal angefeuert. Gebacken wird mit Buchweizen, Hirse, Mais und Kastanie – Weizen kommt nicht in den Teig.</p>
+      <p>Bei uns wird mit Buchweizen, Hirse, Mais und Kastanie gebacken – Weizen kommt nicht in den Teig.</p>
       <p>Jeder Teig ruht mindestens 24 Stunden, bevor er in den Ofen kommt. So wird die Krume feucht und das Brot hält länger frisch.</p>
       <div class="fakten">
-        <div class="fakt"><b>1991</b><span>erstes Feuer im Holzofen am Dorfplatz</span></div>
-        <div class="fakt"><b>24 h</b><span>Teigruhe für jedes Brot</span></div>
+        <div class="fakt"><b>250 °C</b><span>Hitze im Holzofen beim Einschiessen</span></div>
+        <div class="fakt"><b>2</b><span>Kafistuben in Gais und Bühler</span></div>
         <div class="fakt"><b>Di · Mi · Fr</b><span>Ofentage für den Versand</span></div>
         <div class="fakt"><b>0 g</b><span>Gluten in unseren Teigen</span></div>
       </div>
@@ -681,11 +692,11 @@ header.top{background:var(--mehl);backdrop-filter:none;-webkit-backdrop-filter:n
         </div>
       </article>
       <article class="cafe fade">
-        <div class="cb" data-zoom="img/s_kafistube_l.webp"><img src="img/s_kafistube.webp" alt="Kafi-Stube Bühler" loading="lazy"></div>
+        <div class="cb" data-zoom="img/s_kafistube_l.webp"><img src="img/s_kafistube.webp" alt="Kafistube Bühler" loading="lazy"></div>
         <div class="ci">
           <span class="ort2">Bühler · Bahnhofstrasse 4</span>
-          <h3>Kafi-Stube Bühler</h3>
-          <div class="pl"><span>14 Plätze</span><span>seit 2024</span><span>Mo Ruhetag</span></div>
+          <h3>Kafistube Bühler</h3>
+          <div class="pl"><span>14 Plätze</span><span>seit 2024</span><span>So/Mo Ruhetag</span></div>
           <p data-cafe="u"></p>
           <div class="zit">Kleine Stube, grosser Kaffee – und immer ein freundliches Wort.<small>Reto B. (fiktiv)</small></div>
           <div class="acts"><a class="btn rot" href="tel:+41710005678">Telefon</a><a class="btn hell" href="https://maps.google.com/?q=B%C3%BChler+AR" target="_blank" rel="noopener">Wegbeschreibung</a></div>
@@ -699,9 +710,9 @@ header.top{background:var(--mehl);backdrop-filter:none;-webkit-backdrop-filter:n
 <section class="sec cat" id="catering">
   <div class="wrap">
     <div class="catgrid">
-      <div class="catbild fade" data-zoom="img/s_catering_l.webp"><picture><source media="(max-width:767px)" srcset="img/s_catering_m.webp"><img src="img/s_catering.webp" alt="Apéro-Buffet" loading="lazy"></picture><span class="lab">Aus dem Ofen</span></div>
+      <div class="catbild fade" data-zoom="img/s_catering_l.webp"><picture><source media="(max-width:767px)" srcset="img/s_catering_m.webp"><img src="img/s_catering.webp" alt="Apéro-Buffet" loading="lazy"></picture><span class="lab">Apéro &amp; Buffet</span></div>
       <div class="planer fade">
-        <h2 class="cath">Für Ihren Anlass. <em>Ganz ohne Gluten.</em></h2>
+        <h2 class="cath">Für Ihren Anlass. <em>Für zehn oder hundert&nbsp;Gäste.</em></h2>
         <p class="catp">Belegte Holzofenbrote, Fladen vom Blech, kleine Wähen und Tartelettes – für Sitzung, Taufe oder Dorffest. Sagen Sie uns, was Sie planen, wir schicken ein Angebot.</p>
         <div class="q">Was planen Sie?</div>
         <div class="chips" id="artchips"></div>
@@ -728,7 +739,7 @@ header.top{background:var(--mehl);backdrop-filter:none;-webkit-backdrop-filter:n
         <article class="jahr"><div class="jt"><span class="z">1991</span><h3>Das erste Ofenfeuer</h3><p>Der Holzofen am Dorfplatz in Gais brennt – von Anfang an ohne Weizen.</p></div></article>
         <article class="jahr"><div class="jt"><span class="z">2006</span><h3>Die Konditorei in Bühler</h3><p>Torten, Tartelettes und Guetzli bekommen ein eigenes Haus.</p></div></article>
         <article class="jahr"><div class="jt"><span class="z">2015</span><h3>Das erste Paket</h3><p>Brot geht auf die Reise – dienstags bis freitags, frisch aus dem Ofen.</p></div></article>
-        <article class="jahr"><div class="jt"><span class="z">2019 · 2024</span><h3>Zwei Kafistuben</h3><p>2019 in Gais, 2024 in Bühler – mit Brot vom Morgen auf dem Tisch.</p></div></article>
+        <article class="jahr"><div class="jt"><span class="z">2019 · 2024</span><h3>Zwei Kafistuben</h3><p>2019 in Gais, 2024 in Bühler.</p></div></article>
       </div>
       <button class="pfeil r" data-r="jahre" aria-label="Weiter"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 5l7 7-7 7"/></svg></button>
     </div>
@@ -744,8 +755,8 @@ header.top{background:var(--mehl);backdrop-filter:none;-webkit-backdrop-filter:n
       <button class="pfeil l" data-l="zitate" aria-label="Zurück"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 5l-7 7 7 7"/></svg></button>
       <div class="zitate" id="zitate">
         <div class="zitat"><span class="s">★★★★★</span><q>Endlich Brot, das nicht nach Kompromiss schmeckt. Das Buchweizenbrot ist bei uns jede Woche dabei.</q><span class="w"><b>Andrea M.</b> · fiktiv</span></div>
-        <div class="zitat"><span class="s">★★★★★</span><q>Seit drei Jahren bestellen wir jede Woche – das Paket kommt zuverlässig am nächsten Tag.</q><span class="w"><b>Thomas W.</b> · fiktiv</span></div>
-        <div class="zitat"><span class="s">★★★★★</span><q>Den Holzofen riecht man schon vor der Tür – und das Kastanienbrot ist jeden Samstag ausverkauft.</q><span class="w"><b>Claudia R.</b> · fiktiv</span></div>
+        <div class="zitat"><span class="s">★★★★★</span><q>Seit drei Jahren bestellen wir regelmässig – das Paket kommt zuverlässig am nächsten Tag.</q><span class="w"><b>Thomas W.</b> · fiktiv</span></div>
+        <div class="zitat"><span class="s">★★★★★</span><q>Den Holzofen riecht man schon vor der Tür – und das Kastanienbrot ist oft schon am Mittag ausverkauft.</q><span class="w"><b>Claudia R.</b> · fiktiv</span></div>
         <div class="zitat"><span class="s">★★★★★</span><q>Die glutenfreien Guetzli sind an Weihnachten bei uns jedes Jahr zuerst weg.</q><span class="w"><b>Marco S.</b> · fiktiv</span></div>
         <div class="zitat"><span class="s">★★★★★</span><q>Seit der Zöliakie-Diagnose wieder Freude am Frühstücksbrot.</q><span class="w"><b>Daniela F.</b> · fiktiv</span></div>
         <div class="zitat"><span class="s">★★★★★</span><q>Unser Firmen-Apéro war liebevoll gemacht – auch für die glutenfreien Gäste.</q><span class="w"><b>Peter H.</b> · fiktiv</span></div>
@@ -762,7 +773,7 @@ header.top{background:var(--mehl);backdrop-filter:none;-webkit-backdrop-filter:n
   <div class="wrap kgrid">
     <div class="kk fade"><span class="o">Hauptgeschäft</span><h3>Gais</h3><span>Dorfplatz 7 · 9056 Gais AR</span><a class="tel" href="tel:+41710001234">071 000 12 34</a><ul data-std="w"></ul><div class="acts"><a class="btn rot" href="tel:+41710001234">Telefon</a><a class="btn glas" href="https://maps.google.com/?q=Gais+AR" target="_blank" rel="noopener">Wegbeschreibung</a></div></div>
     <div class="kk fade"><span class="o">Konditorei &amp; Kafistube</span><h3>Bühler</h3><span>Bahnhofstrasse 4 · 9055 Bühler</span><a class="tel" href="tel:+41710005678">071 000 56 78</a><ul data-std="u"></ul><div class="acts"><a class="btn rot" href="tel:+41710005678">Telefon</a><a class="btn glas" href="https://maps.google.com/?q=B%C3%BChler+AR" target="_blank" rel="noopener">Wegbeschreibung</a></div></div>
-    <div class="kk fade"><span class="o">Pakete &amp; Anlässe</span><h3>Per Mail</h3><a class="tel" href="mailto:info@backstube-sonnenberg.ch" style="font-size:19px">info@backstube-sonnenberg.ch</a><span style="font-size:14.5px">Musterentwurf – Namen, Adressen und Telefonnummern sind fiktiv.</span><span style="font-size:14.5px">Pakete gehen dienstags bis freitags raus.</span><div class="acts"><a class="btn rot" href="#shop">Ofenladen</a><a class="btn glas" href="#catering">Anlässe</a></div></div>
+    <div class="kk fade"><span class="o">Pakete &amp; Anlässe</span><h3>Per Mail</h3><a class="tel" href="mailto:info@backstube-sonnenberg.ch" style="font-size:19px">info@backstube-sonnenberg.ch</a><span style="font-size:14.5px">Pakete gehen dienstags bis freitags raus.</span><div class="acts"><a class="btn rot" href="#shop">Ofenladen</a><a class="btn glas" href="#catering">Anlässe</a></div></div>
   </div>
 </section>
 </main>
@@ -792,7 +803,7 @@ header.top{background:var(--mehl);backdrop-filter:none;-webkit-backdrop-filter:n
 
 <script>
 document.documentElement.classList.add('js');document.body.classList.add('js');
-const P=[[1,"Buchweizenbrot",7.4,"brot"],[2,"Kastanienbrot",8.2,"brot"],[3,"Hirse-Sonnenblumenbrot",7.6,"brot"],[4,"Quinoa-Toast",6.9,"brot"],[5,"Leinsamenbrötli 4 Stk.",6.4,"brot"],[6,"Mais-Focaccia mit Rosmarin",5.8,"salzig"],[7,"Buttergipfeli 4 Stk.",7.2,"suess"],[8,"Nussschnecke",4.2,"suess"],[9,"Mandelhörnchen",3.8,"suess"],[10,"Haselnuss-Cookies 6 Stk.",6.6,"guetzli"],[11,"Mailänderli 200 g",8.4,"guetzli"],[12,"Brunsli 200 g",8.9,"guetzli"],[13,"Zitronen-Tartelette",4.6,"kuchen"],[14,"Rüeblitorte klein",24.0,"kuchen"],[15,"Schoggikuchen",16.8,"kuchen"],[16,"Apfelstrudel",13.5,"kuchen"],[17,"Käsewähe",9.8,"salzig"],[18,"Spinat-Quiche",10.4,"salzig"],[19,"Pizzaboden 2 Stk.",6.2,"zutaten"],[20,"Brotbackmischung 1 kg",11.9,"zutaten"]];
+const P=[[1,"Buchweizenbrot",7.4,"brot"],[2,"Kastanienbrot",8.2,"brot"],[3,"Hirse-Sonnenblumenbrot",7.6,"brot"],[4,"Quinoa-Toast",6.9,"brot"],[5,"Leinsamenbrötli 4 Stk.",6.4,"brot"],[6,"Mais-Focaccia mit Rosmarin",5.8,"salzig"],[7,"Buttergipfeli 4 Stk.",7.2,"suess"],[8,"Nussschnecke",4.2,"suess"],[9,"Mandelgipfel",3.8,"suess"],[10,"Haselnussguetzli 6 Stk.",6.6,"guetzli"],[11,"Mailänderli 200 g",8.4,"guetzli"],[12,"Brunsli 200 g",8.9,"guetzli"],[13,"Zitronen-Tartelette",4.6,"kuchen"],[14,"Rüeblitorte klein",24.0,"kuchen"],[15,"Schoggikuchen",16.8,"kuchen"],[16,"Apfelstrudel",13.5,"kuchen"],[17,"Käsewähe",9.8,"salzig"],[18,"Spinat-Quiche",10.4,"salzig"],[19,"Pizzaboden 2 Stk.",6.2,"zutaten"],[20,"Brotbackmischung 1 kg",11.9,"zutaten"]];
 const KAT=[['brot','Brot'],['suess','Gipfeli & Gebäck'],['guetzli','Guetzli'],['kuchen','Kuchen & Torten'],['salzig','Salziges'],['zutaten','Backzutaten']];
 const $=s=>document.querySelector(s),$$=s=>[...document.querySelectorAll(s)];
 const chf=n=>'CHF '+n.toFixed(2);
@@ -817,15 +828,15 @@ function status(o){const s=slots(o,today);for(const x of s){if(nm>=x[0]&&nm<x[1]
 function nextBack(){for(let i=0;i<8;i++){const d=(today+i)%7;if(BACK.includes(d)){const dt=new Date(now.getTime()+i*864e5);return {i,d,txt:(i===0?'heute':i===1?'morgen':TL[d])+', '+dt.getDate()+'.'+(dt.getMonth()+1)+'.'}}}}
 $$('[data-heute]').forEach(el=>{const w=status('w'),u=status('u');
   el.innerHTML=`<a class="pill" href="tel:+41710001234"><span class="dot ${w.open?'':'zu'}"></span><b>Gais</b> ${w.t}</a><a class="pill" href="tel:+41710005678"><span class="dot ${u.open?'':'zu'}"></span><b>Bühler</b> ${u.t}</a>`});
-const woche=$('#woche');[1,2,3,4,5,6,0].forEach(d=>{const b=document.createElement('button');b.className='tag'+(BACK.includes(d)?' bt':'')+(d===today?' sel':'');b.dataset.d=d;b.innerHTML=`<b>${TN[d]}</b><span>${d===today?'heute':BACK.includes(d)?'Backtag':'&nbsp;'}</span>`;b.onclick=()=>zeigTag(d);woche.appendChild(b)});
+const woche=$('#woche');[1,2,3,4,5,6,0].forEach(d=>{const b=document.createElement('button');b.className='tag'+(BACK.includes(d)?' bt':'')+(d===today?' sel':'');b.dataset.d=d;b.innerHTML=`<b>${TN[d]}</b><span>${d===today?'heute':BACK.includes(d)?'Ofentag':'&nbsp;'}</span>`;b.onclick=()=>zeigTag(d);woche.appendChild(b)});
 function zeigTag(d){$$('.tag').forEach(t=>t.classList.toggle('sel',+t.dataset.d===d));
   const extra='';
   $('#zeiten2').innerHTML=`<div class="ort"><div class="o">Gais</div><div class="h">${fmt(slots('w',d))}</div></div><div class="ort"><div class="o">Bühler</div><div class="h">${fmt(slots('u',d))}</div>${extra}</div>`;
-  const nb=nextBack();$('#bthint').innerHTML=`<span><i></i>${BACK.includes(d)?'<b>'+TL[d]+': Ofentag für den Versand.</b>':TL[d]+': kein Versand-Ofen.'}</span><span>Nächster Ofentag: <b>${nb.txt}</b></span><span>Bis 12 Uhr bestellt – am nächsten Backtag gebacken</span>`}
+  const nb=nextBack();$('#bthint').innerHTML=`<span><i></i>${BACK.includes(d)?'<b>'+TL[d]+': Ofentag für den Versand.</b>':TL[d]+': kein Versand.'}</span><span>Nächster Ofentag: <b>${nb.txt}</b></span>`}
 zeigTag(today);
-$$('[data-std]').forEach(ul=>{const o=ul.dataset.std;ul.innerHTML=[[2,'Di–Fr'],[1,'Montag'],[6,'Samstag'],[0,'Sonntag']].map(([d,l])=>`<li><span>${l}</span><span>${fmt(slots(o,d,new Date(2026,5,1)))}</span></li>`).join('')});
-$('[data-cafe="w"]').textContent='Mo–Fr 6:30–18:00 · Sa 6:30–14:00 · So 8:00–11:30.';
-$('[data-cafe="u"]').textContent='Di–Fr 7:00–12:00 und 14:30–18:00 · Sa 7:00–13:00 · So und Mo geschlossen.';
+$$('[data-std]').forEach(ul=>{const o=ul.dataset.std;ul.innerHTML=[[1,'Montag'],[2,'Di–Fr'],[6,'Samstag'],[0,'Sonntag']].map(([d,l])=>`<li><span>${l}</span><span>${fmt(slots(o,d,new Date(2026,5,1)))}</span></li>`).join('')});
+const czt=t=>t.replace(/(\d{1,2}:\d{2}–\d{1,2}:\d{2})/g,'<span class="nw">$1</span>').replace(/ · /g,'&nbsp;· ');$('[data-cafe="w"]').innerHTML=czt('Mo–Fr 6:30–18:00 · Sa 6:30–14:00 · So 8:00–11:30.');
+$('[data-cafe="u"]').innerHTML=czt('Di–Fr 7:00–12:00 und 14:30–18:00 · Sa 7:00–13:00 · So und Mo geschlossen.');
 
 /* Paket */
 let korb={};try{korb=JSON.parse(localStorage.getItem('sonnPaket')||'{}')}catch(e){}
@@ -871,7 +882,7 @@ $('#kats').innerHTML=KAT.map(([k,l])=>`<button class="kat${k===kat?' sel':''}" d
 $('#kats').onclick=e=>{const b=e.target.closest('.kat');if(!b)return;kat=b.dataset.k;q='';$('#such').value='';$$('.kat').forEach(x=>x.classList.toggle('sel',x===b));shop()};
 $('#such').oninput=e=>{q=e.target.value.trim().toLowerCase();$$('.kat').forEach(x=>x.classList.toggle('sel',!q&&x.dataset.k===kat));shop()};
 function shop(){const list=q?P.filter(p=>p[1].toLowerCase().includes(q)):P.filter(p=>p[3]===kat);const r=$('#regal');
-  r.innerHTML=list.length?list.map(p=>{const f=String(p[0]).padStart(3,'0'),gf=p[3]!=='biber'&&p[0]!==0;return `<article class="karte"><div class="bild" data-zoom="img/pl/${f}.webp" data-cap="${p[1]} · ${chf(p[2])}"><img src="img/p/${f}.webp" alt="${p[1]}" loading="lazy">${gf?`<span class="badge">${ear}glutenfrei</span>`:p[3]==='biber'?'<span class="badge nogf">mit Gluten</span>':''}</div><div class="unt"><div class="nm">${p[1]}</div><div class="zr"><span class="pr">${chf(p[2])}</span>${knopf(p[0],p[1])}</div></div></article>`}).join(''):'<div class="leer">Nichts gefunden – versuchen Sie «Brot», «Kuchen» oder «Cookies».</div>';
+  r.innerHTML=list.length?list.map(p=>{const f=String(p[0]).padStart(3,'0'),gf=p[3]!=='biber'&&p[0]!==0;return `<article class="karte"><div class="bild" data-zoom="img/pl/${f}.webp" data-cap="${p[1]} · ${chf(p[2])}"><img src="img/p/${f}.webp" alt="${p[1]}" loading="lazy">${gf?`<span class="badge">${ear}glutenfrei</span>`:p[3]==='biber'?'<span class="badge nogf">mit Gluten</span>':''}</div><div class="unt"><div class="nm">${p[1]}</div><div class="zr"><span class="pr">${chf(p[2])}</span>${knopf(p[0],p[1])}</div></div></article>`}).join(''):'<div class="leer">Nichts gefunden – versuchen Sie «Brot», «Kuchen» oder «Guetzli».</div>';
   r.scrollLeft=0;reihen();upd('regal');stp()}
 /* wenige Produkte: eine volle Reihe statt halb leerer Doppelreihe (Prüfer 25.11) */
 function reihen(){const r=$('#regal');r.style.gridTemplateRows='';if(innerWidth<768)return;const c=r.firstElementChild;if(!c||!c.classList.contains('karte'))return;const g=parseFloat(getComputedStyle(r).columnGap)||16;const cols=Math.max(1,Math.round((r.clientWidth+g)/(c.getBoundingClientRect().width+g)));if(r.children.length<=cols)r.style.gridTemplateRows='auto'}
@@ -888,7 +899,7 @@ document.addEventListener('click',e=>{const l=e.target.closest('[data-l]'),r=e.t
 addEventListener('resize',()=>['regal','jahre','zitate'].forEach(upd));
 
 /* Catering */
-const ARTEN=['Apéro','Zmorge-Buffet','Fladenbuffet','Sitzungsplatte','Wähenblech','Tarteletten','Ofenkurs'];
+const ARTEN=['Apéro','Zmorge-Buffet','Fladenbuffet','Sitzungsplatte','Wähenblech','Tartelettes'];
 const ANL=['Sitzung','Geburtstag','Hochzeit','Taufe','Vereinsfest','Abdankung'];
 let art=new Set(['Apéro']),anl='Sitzung',gst=40,gfOn=false;
 $('#artchips').innerHTML=ARTEN.map(a=>`<button class="chip${art.has(a)?' sel':''}" data-a="${a}">${a}</button>`).join('');
