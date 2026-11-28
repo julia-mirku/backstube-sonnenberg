@@ -200,7 +200,7 @@ section{position:relative}
 .such input:focus{outline:none;box-shadow:inset 0 0 0 1.5px var(--gold),0 0 0 4px rgba(224,164,58,.18)}
 .such svg{position:absolute;left:13px;top:50%;transform:translateY(-50%);width:17px;height:17px;color:var(--muted)}
 .regalwrap{position:relative}
-.regal{display:grid;grid-auto-flow:column;grid-template-rows:repeat(2,auto);grid-auto-columns:calc((100% - 4*16px)/5);gap:16px;overflow-x:auto;scroll-snap-type:x mandatory;scroll-behavior:smooth;padding:4px 2px 10px;scrollbar-width:none;overscroll-behavior-x:contain}
+.regal{display:grid;grid-auto-flow:column;grid-template-rows:repeat(2,auto);grid-auto-columns:calc((100% - 4*16px)/5);gap:16px;overflow-x:auto;scroll-snap-type:x mandatory;scroll-behavior:smooth;padding:4px 2px 10px;scrollbar-width:none}
 .regal::-webkit-scrollbar{display:none}
 .karte{scroll-snap-align:start;background:#fff;border-radius:var(--r);overflow:hidden;display:flex;flex-direction:column;box-shadow:0 1px 0 rgba(58,35,23,.06),0 14px 30px -24px rgba(58,35,23,.5);transition:box-shadow .25s,transform .25s}
 .karte .bild{position:relative;aspect-ratio:3/2;overflow:hidden;cursor:zoom-in;background:var(--creme)}
@@ -326,9 +326,9 @@ body.paketauf .paket{transform:none;visibility:visible;box-shadow:-30px 0 60px -
 
 /* Seit 1991 */
 .chronik{background:var(--mehl)}
-.jahre{display:grid;grid-auto-flow:column;grid-auto-columns:calc((100% - 3*18px)/4);gap:18px;overflow-x:auto;scroll-snap-type:x mandatory;scroll-behavior:smooth;scrollbar-width:none;padding:4px 2px 10px;overscroll-behavior-x:contain}
+.jahre{display:grid;grid-auto-flow:column;grid-auto-columns:calc((100% - 3*18px)/4);gap:18px;overflow-x:auto;scroll-snap-type:x mandatory;scroll-behavior:smooth;scrollbar-width:none;padding:4px 2px 10px}
 .jahre::-webkit-scrollbar{display:none}
-.jahr{scroll-snap-align:start;border-radius:22px;overflow:hidden;background:var(--creme);display:flex;flex-direction:column;transition:box-shadow .25s,transform .25s}
+.jahr{scroll-snap-align:start;scroll-snap-stop:always;border-radius:22px;overflow:hidden;background:var(--creme);display:flex;flex-direction:column;transition:box-shadow .25s,transform .25s}
 .jahr .jb{aspect-ratio:4/3;overflow:hidden;cursor:zoom-in}
 .jahr .jb img{width:100%;height:100%;object-fit:cover;transition:transform .6s var(--ease)}
 .jahr .jt{padding:22px 20px 24px}.jahr{min-height:220px}
@@ -343,9 +343,9 @@ body.paketauf .paket{transform:none;visibility:visible;box-shadow:-30px 0 60px -
 .stimmen .sh p{color:var(--kraft2)}
 .sterne{display:flex;align-items:center;gap:12px;font-size:15px}
 .sterne b{font-family:"Zilla Slab",serif;font-size:44px;color:var(--goldhell);line-height:1}
-.zitate{display:grid;grid-auto-flow:column;grid-auto-columns:calc((100% - 2*18px)/3);gap:18px;overflow-x:auto;scroll-snap-type:x mandatory;scroll-behavior:smooth;scrollbar-width:none;padding:4px 2px 10px;overscroll-behavior-x:contain}
+.zitate{display:grid;grid-auto-flow:column;grid-auto-columns:calc((100% - 2*18px)/3);gap:18px;overflow-x:auto;scroll-snap-type:x mandatory;scroll-behavior:smooth;scrollbar-width:none;padding:4px 2px 10px}
 .zitate::-webkit-scrollbar{display:none}
-.zitat{scroll-snap-align:start;background:rgba(255,255,255,.06);border-radius:22px;padding:22px;display:flex;flex-direction:column;gap:12px;transition:background .25s,box-shadow .25s}
+.zitat{scroll-snap-align:start;scroll-snap-stop:always;background:rgba(255,255,255,.06);border-radius:22px;padding:22px;display:flex;flex-direction:column;gap:12px;transition:background .25s,box-shadow .25s}
 .zitat q{font-family:"Zilla Slab",serif;font-size:19px;line-height:1.35;color:#fff;quotes:"«" "»"}
 .zitat .w{margin-top:auto;font-size:13.5px;color:var(--kraft2)}
 .zitat .w b{color:var(--goldhell)}
@@ -430,7 +430,7 @@ body.menu .mmenu{transform:none}
   .theke{justify-self:stretch;width:auto;flex-direction:row;overflow-x:auto;scroll-snap-type:x mandatory;margin:0 -16px;padding:0 16px 4px;scroll-padding:0 16px;scrollbar-width:none;flex-wrap:nowrap}
   .theke::-webkit-scrollbar{display:none}
   .theke .t{display:none}
-  .mini{flex:0 0 78%;scroll-snap-align:start}
+  .mini{flex:0 0 78%;scroll-snap-align:start;scroll-snap-stop:always}
   .heroB{min-height:0;max-height:none}
   .heroB .in{padding:18px 0 26px}
   .heroB h1{font-size:36px}
